@@ -1,0 +1,9 @@
+<h2>A selection of plants:</h2>
+<div>
+    <% plants.forEach(plant => { %>
+      <a href="plants/<%= plant.id %>">
+        <!-- <img height="150" width="100" src="<%= plant.defaultImagePath %>"> -->
+        <h3><%= plant.botanicalName %></h3>
+      </a>
+    <% }) %>
+  </div>
