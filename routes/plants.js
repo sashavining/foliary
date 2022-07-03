@@ -27,9 +27,11 @@ router.get('/', async (req, res) => {
 // Show Plant Route
 router.get('/:id', async (req, res) => {
   try {
-    const plant = await Plant.findById(req.params.id)
-                           .exec()
-    res.render('plants/show', { plant: plant })
+    const plant = await Plant.findById(req.params.id).exec()
+    console.log(plant) // why undefined?
+    console.log(plant.CloudinaryId) // why undefined?
+    const plantImageTag = await createImageTag(plant.CloudinaryId);
+    res.render('plants/show', { plant: plant, plantImageTag: plantImageTag })
   } catch {
     res.redirect('/')
   }
@@ -95,5 +97,14 @@ router.put('/:id', upload.single("image"), async(req, res) => {
   }
 })
 */
+async function createImageTag (publicId) {
+  // Create an image tag with transformations applied to the src URL
+  let imageTag = cloudinary.image(publicId, {
+      transformation: [
+        { width: 350, crop: 'thumb' },
+      ],
+    });
+    return imageTag
+};
 
 module.exports = router

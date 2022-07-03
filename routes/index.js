@@ -29,7 +29,7 @@ async function createImageTag (publicId) {
     // Create an image tag with transformations applied to the src URL
     let imageTag = cloudinary.image(publicId, {
         transformation: [
-          { width: 200, height: 200, crop: 'thumb' },
+          { width: 200, height: 200, crop: 'thumb' }, // check this out for more options: https://cloudinary.com/documentation/node_quickstart
         ],
       });
       return imageTag

@@ -29,7 +29,7 @@ const plantSchema = new mongoose.Schema({
     type: String,
     required: true 
   },
-  Cloudinary_id: {
+  CloudinaryId: {
     type: String,
   },
 })
