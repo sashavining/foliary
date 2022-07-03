@@ -14,13 +14,10 @@ router.get('/', async (req, res) => {
         ], function (err, docs) {
             return docs
         })
-        plantsImageTags = Promise.all(plants.map(async plant => {
-            console.log(plant.CloudinaryId)
+        plantsImageTags = await Promise.all(plants.map(async plant => {
             const imageTag = await createImageTag(plant.CloudinaryId);
-            console.log(imageTag)
             return imageTag;
         }))
-        console.log(plantsImageTags)
     } catch {
         console.log("oops! error")
         plants = []
@@ -28,17 +25,11 @@ router.get('/', async (req, res) => {
     res.render('index', { plants: plants, plantsImageTags: plantsImageTags })
 });
 
-//////////////////////////////////////////////////////////////
-// Creates an HTML image tag with a transformation that
-// results in a circular thumbnail crop of the image  
-// focused on the faces, applying an outline of the  
-// first color, and setting a background of the second color.
-//////////////////////////////////////////////////////////////
 async function createImageTag (publicId) {
     // Create an image tag with transformations applied to the src URL
     let imageTag = cloudinary.image(publicId, {
         transformation: [
-          { width: 250, height: 250, crop: 'thumb' },
+          { width: 200, height: 200, crop: 'thumb' },
         ],
       });
       return imageTag
