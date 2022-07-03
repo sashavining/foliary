@@ -1,9 +1,10 @@
 <h2>A selection of plants:</h2>
 <div>
-    <% plants.forEach(plant => { %>
-      <a href="plants/<%= plant.id %>">
+    <% plants.forEach((plant, index) => { %>
+      <a href="plants/<%= plant._id %>">
+        <%= plantsImageTags[index] %>
         <!-- <img height="150" width="100" src="<%= plant.defaultImagePath %>"> -->
-        <h3><%= plant.botanicalName %></h3>
+        <h3><%= plant.CommonName %></h3>
       </a>
     <% }) %>
   </div>

@@ -6,7 +6,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/flowering_maple_f8gmgw"
     },
     {
         "BotanicalName": "Acalypha hispida",
@@ -15,7 +16,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/chenile_plant_wtjasc"
     },
     {
         "BotanicalName": "Achimenes hybrids",
@@ -24,7 +26,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/magic_flower_rrx9hd"
     },
     {
         "BotanicalName": "Acorus calamus",
@@ -33,7 +36,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/sweet_flag_nobr76"
     },
     {
         "BotanicalName": "Acorus gramineus",
@@ -42,7 +46,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/miniature_sweet_flag_jlksan"
     },
     {
         "BotanicalName": "Adiantum raddianum",
@@ -51,7 +56,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/maidenhair_fern_gjnnh3"
     },
     {
         "BotanicalName": "Adromischus cristatus",
@@ -60,7 +66,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/crinkle-leaf_plant_n6fpfr"
     },
     {
         "BotanicalName": "Adromischus festivus",
@@ -69,7 +76,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/crinkle-leaf_plant_n6fpfr"
     },
     {
         "BotanicalName": "Aechmea fasciata",
@@ -78,7 +86,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/silver_vase_exyotp"
     },
     {
         "BotanicalName": "Aechmea miniata 'Discolor'",
@@ -87,7 +96,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/purplish_coral_berry_faexj5"
     },
     {
         "BotanicalName": "Aechmea 'Royal Wine'",
@@ -96,7 +106,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/royal_wine_bromeliad_prnodz"
     },
     {
         "BotanicalName": "Aeschynanthus marmoratus",
@@ -105,7 +116,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/zebra_basket_vine_dxxjby"
     },
     {
         "BotanicalName": "Aeschynanthus pulcher",
@@ -114,7 +126,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/lipstick_vine_nbhyi9"
     },
     {
         "BotanicalName": "Agave Americana 'Marginata'",
@@ -123,7 +136,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/variegated_century_plant_p2k1cl"
     },
     {
         "BotanicalName": "Agave victoriae-reginae",
@@ -132,7 +146,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/queen_agave_oavbka"
     },
     {
         "BotanicalName": "Aglaonema modestum",
@@ -141,7 +156,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/chinese_evergreen_jgolfj"
     },
     {
         "BotanicalName": "Aglaonema 'Silver King'",
@@ -150,7 +166,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/silver_king_ehb0dw"
     },
     {
         "BotanicalName": "Aglaonema 'Silver Queen'",
@@ -159,7 +176,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/silver_queen_ui6lvo"
     },
     {
         "BotanicalName": "Allamanda cathartica",
@@ -168,7 +186,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants", 
+        "CloudinaryId": "houseplants/allamanda_bhhl4k"
     },
     {
         "BotanicalName": "Alloplectus nummularia",
@@ -177,7 +196,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/miniature_pouch_flower_rxvrry"
     },
     {
         "BotanicalName": "Aloe aborescens",
@@ -186,7 +206,8 @@
         "Temperature": "Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/candelabra_plant_j5pcio"
     },
     {
         "BotanicalName": "Aloe barbadensis",
@@ -195,7 +216,8 @@
         "Temperature": "Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/medicine_plant_pvn7w5"
     },
     {
         "BotanicalName": "Aloe brevifolia",
@@ -204,7 +226,8 @@
         "Temperature": "Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/brevifolia_aloe_mmxbeb"
     },
     {
         "BotanicalName": "Ananas comosus",
@@ -213,7 +236,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/pineapple_ngp2hf"
     },
     {
         "BotanicalName": "Anthurium clarinervium",
@@ -222,7 +246,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/dwarf_crystal_anthurium_k0gjtj"
     },
     {
         "BotanicalName": "Anthurium hookeri",
@@ -231,7 +256,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/bird_s_nest_anthurium_lbyvwf"
     },
     {
         "BotanicalName": "Anthurium scherzeranum",
@@ -240,7 +266,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/flamingo_flower_ifozeo"
     },
     {
         "BotanicalName": "Aphelandra squarrosa",
@@ -249,7 +276,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/zebra_plant_l1wswg"
     },
     {
         "BotanicalName": "Araucaria heterophylla",
@@ -258,7 +286,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/norfolk_island_pine_nlntjs"
     },
     {
         "BotanicalName": "Ardissa crenata",
@@ -267,7 +296,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/ardisia_n5tsml"
     },
     {
         "BotanicalName": "Asparagus densiflorus 'Myers'",
@@ -276,7 +306,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/plume_asparagus_azrrhw"
     },
     {
         "BotanicalName": "Asparagus densiflorus 'Sprengeri'",
@@ -285,7 +316,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/foxtail_fern_tmer9g"
     },
     {
         "BotanicalName": "Asparagus falcatus",
@@ -294,7 +326,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/sickle_thorn_aj0zar"
     },
     {
         "BotanicalName": "Aspidistra elatior",
@@ -303,7 +336,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/cast_iron_place_ciemyt"
     },
     {
         "BotanicalName": "Asplenium daucifolium",
@@ -312,7 +346,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/mother_fern_unoyy1"
     },
     {
         "BotanicalName": "Asokebuyn budys",
@@ -321,7 +356,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/bird_s_nest_fern_hdal8m"
     },
     {
         "BotanicalName": "Astrophytum myriostigma",
@@ -330,7 +366,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/bishop_s_cap_seyfxs"
     },
     {
         "BotanicalName": "Beaucarnea recurvata",
@@ -339,7 +376,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/ponytail_bsahpk"
     },
     {
         "BotanicalName": "Begonia cubensis",
@@ -348,7 +386,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/cuban_holly_bl0uj8"
     },
     {
         "BotanicalName": "Begonia metallica",
@@ -357,7 +396,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/metallic_leaf_begonia_tnwmui"
     },
     {
         "BotanicalName": "Begonia x rex-cultorum",
@@ -366,7 +406,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/rex_begonia_d7xjxp"
     },
     {
         "BotanicalName": "Begonia semperflorens",
@@ -375,7 +416,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/wax_begonia_dgfetx"
     },
     {
         "BotanicalName": "Billbergia nutans",
@@ -384,7 +426,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/queen_s_tears_jamly1"
     },
     {
         "BotanicalName": "Billbergia pyramidalis",
@@ -393,7 +436,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/urn_plant_dmja1b"
     },
     {
         "BotanicalName": "Billbergia zebrina",
@@ -402,7 +446,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/zebra_plant_billbergia_vg9tmm"
     },
     {
         "BotanicalName": "Bougainvillea spp.",
@@ -411,7 +456,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/bougainvillea_prytbx"
     },
     {
         "BotanicalName": "Brassaia actinophylla",
@@ -420,7 +466,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/schefflera_wcb7vm"
     },
     {
         "BotanicalName": "Brassaia arboricola",
@@ -429,7 +476,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/dwarf_schefflera_qnhwqt"
     },
     {
         "BotanicalName": "Caladium spp.",
@@ -438,7 +486,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/caladium_spp._c7amvn"
     },
     {
         "BotanicalName": "Calathea insignis",
@@ -447,7 +496,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants", 
+        "CloudinaryId": "houseplants/rattlesnake_plant_lithse"
     },
     {
         "BotanicalName": "Calathea makoyana",
@@ -455,8 +505,9 @@
         "Light": "High-light areas: Over 200 ft-c, but not direct sun\/Medium-light areas: 75 ft-c to 200 ft-c",
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
-        "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "Water": "Keep soil mix moist", 
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/peacock_plant_ltk3nt"
     },
     {
         "BotanicalName": "Calathea micans",
@@ -465,7 +516,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/miniature_maranta_wmj4rl"
     },
     {
         "BotanicalName": "Calathea roseopicta",
@@ -474,7 +526,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/rose_calathea_bl26bp"
     },
     {
         "BotanicalName": "Calceolaria crenatiflora",
@@ -483,7 +536,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/slipperwort_gezmv4"
     },
     {
         "BotanicalName": "Callisia elegans",
@@ -492,7 +546,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/striped_inch_plant_gkgb0w"
     },
     {
         "BotanicalName": "Carissa grandiflora 'Bonsai'",
@@ -501,7 +556,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/bonsai_natal_plum_z3iior"
     },
     {
         "BotanicalName": "Carissa grandiflora 'Boxwood Beauty'",
@@ -510,7 +566,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/boxwood_beauty_frt6kv"
     },
     {
         "BotanicalName": "Caryota mitis",
@@ -519,7 +576,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/Fishtail_palm_ewtalf"
     },
     {
         "BotanicalName": "Catharanthus roseus",
@@ -528,7 +586,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/madagascar_periwinkle_f3tqp4"
     },
     {
         "BotanicalName": "Cereus peruvianus",
@@ -537,7 +596,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/peruvian_apple_cactus_a9uqva"
     },
     {
         "BotanicalName": "Ceropegia woodii",
@@ -546,7 +606,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/rosary_vine_raljnc"
     },
     {
         "BotanicalName": "Chamaedorea elegans",
@@ -555,7 +616,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/parlor_palm_gkudg8"
     },
     {
         "BotanicalName": "Chamaedorea erumpens",
@@ -564,7 +626,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/bamboo_palm_zuxifj"
     },
     {
         "BotanicalName": "Chamaerops humilis",
@@ -573,7 +636,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/european_fan_palm_e8cyte"
     },
     {
         "BotanicalName": "Chirita lavandulacea",
@@ -582,7 +646,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/hindustan_gentian_gqovoe"
     },
     {
         "BotanicalName": "Chlorophytum comosum 'Variegatum'",
@@ -591,7 +656,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/hindustan_gentian_gqovoe" 
     },
     {
         "BotanicalName": "Chlorophytum comosum 'Vittatum'",
@@ -600,7 +666,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/variegated_spider_plant_wypmps" 
     },
     {
         "BotanicalName": "Chrysalidocarpus lutescens",
@@ -609,7 +676,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/areca_palm_wttgdp" 
     },
     {
         "BotanicalName": "Chrysanthemum morifolium",
@@ -618,7 +686,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/chrysanthemum_pegs7p" 
     },
     {
         "BotanicalName": "Cissus antarctica",
@@ -627,7 +696,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/kangaroo_vine_ilfpem" 
     },
     {
         "BotanicalName": "Cissus rhombifolia",
@@ -636,7 +706,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/grape_leaf_ivy_nnkgor" 
     },
     {
         "BotanicalName": "Cissus rotundifolia",
@@ -645,7 +716,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/wax_cissus_qibq3g" 
     },
     {
         "BotanicalName": "Cissus striata",
@@ -654,7 +726,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/miniature_grape_ivy_xahemp" 
     },
     {
         "BotanicalName": "Citrofortunella mitis",
@@ -663,7 +736,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/calamondin_orange_qcvyer" 
     },
     {
         "BotanicalName": "Clivia miniata 'Grandiflora'",
@@ -672,7 +746,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/bush_lily_om1our" 
     },
     {
         "BotanicalName": "Codiaeum variegatum",
@@ -681,7 +756,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/croton_mggm8u" 
     },
     {
         "BotanicalName": "Coffeaa arabica",
@@ -690,7 +766,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/coffee_d8dujt" 
     },
     {
         "BotanicalName": "Coleus blumeri",
@@ -699,7 +776,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/coleus_wdluo3" 
     },
     {
         "BotanicalName": "Colummea hybrids",
@@ -708,7 +786,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/goldfish_plant_uvzq2b" 
     },
     {
         "BotanicalName": "Cordyline terminalis",
@@ -717,7 +796,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/ti_plant_pyad1d" 
     },
     {
         "BotanicalName": "Crassula argentea",
@@ -726,7 +806,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/jade_plant_xqermn" 
     },
     {
         "BotanicalName": "Crassula falcata",
@@ -735,7 +816,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/propeller_plant_vf5jmx" 
     },
     {
         "BotanicalName": "Crassula hemisphaerica",
@@ -744,7 +826,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/arab_s_turban_vasowu"  
     },
     {
         "BotanicalName": "Crassula lycopodioides",
@@ -753,7 +836,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/toy_cypress_euqvmz"   
     },
     {
         "BotanicalName": "Crassula schmidtii",
@@ -762,7 +846,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/red_flowering_crassula_viy47i"
     },
     {
         "BotanicalName": "Crassula teres",
@@ -771,7 +856,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/rattlesnake_tail_ndet7y"
     },
     {
         "BotanicalName": "Crossandra infundibuliformis",
@@ -780,7 +866,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/crossandra_qm9uph"
     },
     {
         "BotanicalName": "Cryptanthus bivittatus 'Minor'",
@@ -789,7 +876,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads", 
+        "CloudinaryId": "houseplants/dwarf_rose_stripe_star_fflcfc"
     },
     {
         "BotanicalName": "Cryptanthus fosteranus",
@@ -798,7 +886,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/stiff_pheasant_leaf_lmc787"
     },
     {
         "BotanicalName": "Cryptanthus zonatus",
@@ -807,7 +896,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/zebra_plant_l1wswg"
     },
     {
         "BotanicalName": "Cyrtomium falcatum 'Rochfordianum'",
@@ -816,7 +906,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/house_holly_fern_zcesyv"
     },
     {
         "BotanicalName": "Davallia fejeensis",
@@ -825,7 +916,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/rabbit_s_foot_fern_pjgqr3"
     },
     {
         "BotanicalName": "Dieffenbachia 'Exotica Perfection'",
@@ -834,7 +926,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/exotica_perfection_whzscu"
     },
     {
         "BotanicalName": "Dieffenbachia maculata",
@@ -843,7 +936,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/spotted_dumb_cane_nltyw1" 
     },
     {
         "BotanicalName": "Dizygotheca elegantissima",
@@ -852,7 +946,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/false_aralia_vbibu9" 
     },
     {
         "BotanicalName": "Dracaena deremensis 'Janet Craig'",
@@ -861,7 +956,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/janet_craig_eq0cfg" 
     },
     {
         "BotanicalName": "Dracaena deremensis 'Warneckii'",
@@ -870,7 +966,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/warneckii_xnqnqu" 
     },
     {
         "BotanicalName": "Dracaena fragrans 'Massangeana'",
@@ -879,7 +976,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/corn_plant_b1jsao" 
     },
     {
         "BotanicalName": "Dracaena marginata",
@@ -888,7 +986,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/marginata_totgdk" 
     },
     {
         "BotanicalName": "Dracaena surculosa",
@@ -897,7 +996,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/gold_dust_dracaena_elzwrq" 
     },
     {
         "BotanicalName": "Dyckia brevifolia",
@@ -906,7 +1006,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/miniature_agave_czqkmp" 
     },
     {
         "BotanicalName": "Dyckia fosterana",
@@ -915,7 +1016,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/silver_and_gold_dyckia_ekjjqy" 
     },
     {
         "BotanicalName": "Echeveria agavoides",
@@ -924,7 +1026,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/molded_wax_rg3axh" 
     },
     {
         "BotanicalName": "Echeveria elegans",
@@ -933,7 +1036,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/mexican_snowball_obo4ak" 
     },
     {
         "BotanicalName": "Echinocereus reichenbachii",
@@ -942,7 +1046,9 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/lace_cactus_znbyve" 
+
     },
     {
         "BotanicalName": "Epidendrum atropurpureum",
@@ -951,7 +1057,9 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Orchids"
+        "SuggestedSoilMix": "Orchids",
+        "CloudinaryId": "houseplants/spice_orchid_pkiwxd" 
+
     },
     {
         "BotanicalName": "Epiphyllum hybrids",
@@ -960,7 +1068,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/orchid_cacti_dybq4p" 
     },
     {
         "BotanicalName": "Epipremnum aureum",
@@ -969,7 +1078,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/golden_pothos_obt2b4" 
     },
     {
         "BotanicalName": "Epipremnum aureum 'Marble Queen'",
@@ -978,7 +1088,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/marble_queen_pothos_qwulqk" 
     },
     {
         "BotanicalName": "Episcia cupreata",
@@ -987,7 +1098,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/flame_violet_i6jaxa" 
     },
     {
         "BotanicalName": "Episcia dianthiflora",
@@ -996,7 +1108,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/lace-flower_vine_hoxbnx" 
     },
     {
         "BotanicalName": "Episcia reptans",
@@ -1005,7 +1118,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/scarlet_violet_kiwtnm" 
     },
     {
         "BotanicalName": "Euphorbia coeralescens",
@@ -1014,7 +1128,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/blue_euphorbia_k9zilj" 
     },
     {
         "BotanicalName": "Euphorbia mammillaris",
@@ -1023,7 +1138,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/corncob_cactus_zwiy4w" 
     },
     {
         "BotanicalName": "Euphorbia milii splendens",
@@ -1032,7 +1148,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/euphorbia_milii_splendens_dal2kr" 
     },
     {
         "BotanicalName": "Euphorbia pulcherrima",
@@ -1041,7 +1158,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/poinsettia_xhnftx" 
     },
     {
         "BotanicalName": "Euphorbia tirucalli",
@@ -1050,7 +1168,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/milkbush_jyprva" 
     },
     {
         "BotanicalName": "Fatshedera lizei",
@@ -1059,7 +1178,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/botanical_wonder_plant_zlypvj" 
     },
     {
         "BotanicalName": "Fatsia japonica",
@@ -1068,7 +1188,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/japanese_aralia_sjabgy" 
     },
     {
         "BotanicalName": "Ficus benjamina",
@@ -1077,7 +1198,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/weeping_fig_in1ofw" 
     },
     {
         "BotanicalName": "Ficus deltoidea",
@@ -1086,7 +1208,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/mistletoe_fig_dv7jaz" 
     },
     {
         "BotanicalName": "Ficus elastica 'Decora'",
@@ -1095,7 +1218,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures\/Warm: 70°F night, 85°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/rubber_plant_ckwcer" 
     },
     {
         "BotanicalName": "Ficus lyrata",
@@ -1104,7 +1228,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/fiddle-leaf_fig_jvlsfr" 
     },
     {
         "BotanicalName": "Ficus pumila 'Minima'",
@@ -1113,7 +1238,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/dwarf_creeping_fig_qm8riv" 
     },
     {
         "BotanicalName": "Ficus retusa",
@@ -1122,7 +1248,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/cuban_laurel_hleioh" 
     },
     {
         "BotanicalName": "Ficus sagittata",
@@ -1131,7 +1258,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/rooting_fig_xha28u" 
     },
     {
         "BotanicalName": "Ficus willdemaniana",
@@ -1140,7 +1268,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/dwarf_fiddle-leaf_fig_jmkqbz" 
     },
     {
         "BotanicalName": "Fittonia verschaffeltii",
@@ -1149,7 +1278,9 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/red-nerved_fittonia_jgo9nx" 
+
     },
     {
         "BotanicalName": "Fittonia verschaffeltii argyroneura",
@@ -1158,7 +1289,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/silver-nerved_fittonia_izmzxi" 
     },
     {
         "BotanicalName": "Fuchsia hybrida",
@@ -1167,7 +1299,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/fuchsias_qouhaq" 
     },
     {
         "BotanicalName": "Gasteria hybrida",
@@ -1176,7 +1309,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/ox_tongue_i8vlg9" 
     },
     {
         "BotanicalName": "Graptopetalum amethystinum",
@@ -1185,7 +1319,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/jewel_leaf_plant_ylwhbj" 
     },
     {
         "BotanicalName": "Guzmania lingulata 'Major'",
@@ -1194,7 +1329,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/scarlet_star_v3i59j" 
     },
     {
         "BotanicalName": "Guzmania monostachia",
@@ -1203,7 +1339,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/striped_torch_xprpld" 
     },
     {
         "BotanicalName": "Gynura aurantiaca 'Purple Passion'",
@@ -1212,7 +1349,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/purple_passion_bdmx1n" 
     },
     {
         "BotanicalName": "Haworthia cuspidata",
@@ -1221,7 +1359,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/star_window_plant_ped02h" 
     },
     {
         "BotanicalName": "Haworthia fasciata",
@@ -1230,7 +1369,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/zebra_haworthia_tbwovj" 
     },
     {
         "BotanicalName": "Haworthia subfasciata",
@@ -1239,7 +1379,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/little_zebra_plant_e2acln" 
     },
     {
         "BotanicalName": "Haworthia truncata",
@@ -1248,7 +1389,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/clipped_window_plant_ominfd" 
     },
     {
         "BotanicalName": "Hedera canariensis",
@@ -1257,7 +1399,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/algerian_ivy_y5xpz7" 
     },
     {
         "BotanicalName": "Hedera helix",
@@ -1266,7 +1409,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/english_ivy_xuabse" 
     },
     {
         "BotanicalName": "Hemigraphis alternata",
@@ -1275,7 +1419,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/waffle_plant_qp9kzj"  
     },
     {
         "BotanicalName": "Hibiscus rosa-sinensis",
@@ -1284,7 +1429,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/chinese_hibiscus_hmphs1" 
     },
     {
         "BotanicalName": "Hippeastrum hybrids",
@@ -1293,7 +1439,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/amaryllis_sd0wwc" 
     },
     {
         "BotanicalName": "Howea belmoreana",
@@ -1302,7 +1449,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/belmore_sentry_palm_pvmioi" 
     },
     {
         "BotanicalName": "Howea forsterana",
@@ -1311,7 +1459,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/kentia_palm_lxcil6" 
     },
     {
         "BotanicalName": "Hoya carnosa 'Variegata'",
@@ -1320,7 +1469,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/wax_plant_arxccj" 
     },
     {
         "BotanicalName": "Hoya kerrii",
@@ -1329,7 +1479,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/sweetheart_hoya_alqpus" 
     },
     {
         "BotanicalName": "Hyacinthus orientalis",
@@ -1338,7 +1489,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/hyacinth_js110u" 
     },
     {
         "BotanicalName": "Impatiens wallerana 'Variegata'",
@@ -1347,7 +1499,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/busy_lizzie_impatiens_mrwaqb" 
     },
     {
         "BotanicalName": "Ixora coccinea",
@@ -1356,7 +1509,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/ixora_vvbtd1" 
     },
     {
         "BotanicalName": "Jatropha integerrima",
@@ -1365,7 +1519,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/peregrian_kkmahk" 
     },
     {
         "BotanicalName": "Justicia brandegeana",
@@ -1374,7 +1529,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/shrimp_plant_ql9liw" 
     },
     {
         "BotanicalName": "Kalanchoe blossfeldiana",
@@ -1383,7 +1539,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/christmas_kalanchoe_pkjzrw" 
     },
     {
         "BotanicalName": "Kalanchoe pumila",
@@ -1392,7 +1549,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/dwarf_purple_kalanchoe_o1ozfu" 
     },
     {
         "BotanicalName": "Kalanchoe tomentosa",
@@ -1401,7 +1559,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/panda_plant_fidvcd" 
     },
     {
         "BotanicalName": "Malvaviscus arboreus",
@@ -1410,7 +1569,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/turk_s_cap_uxbxtz" 
     },
     {
         "BotanicalName": "Mammillaria bocasana",
@@ -1419,7 +1579,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/powder_puff_mmhbn0" 
     },
     {
         "BotanicalName": "Manettia inflata",
@@ -1428,7 +1589,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/firecracker_plant_ovqyhf" 
     },
     {
         "BotanicalName": "Maranta leuconeura erythroneura",
@@ -1437,7 +1599,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/red_nerve_plant_ad4yip" 
     },
     {
         "BotanicalName": "Maranta leuconeura kerchoviana",
@@ -1446,7 +1609,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/prayer_plant_wdur1a" 
     },
     {
         "BotanicalName": "Mikania ternata",
@@ -1455,7 +1619,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/plush_vine_rjjjbs" 
     },
     {
         "BotanicalName": "Monstera deliciosa",
@@ -1464,7 +1629,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/philodendron_pertusum_h6sb0o" 
     },
     {
         "BotanicalName": "Monstera obliqua",
@@ -1473,7 +1639,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/window_leaf_qhan1j" 
     },
     {
         "BotanicalName": "Nautilocalyx lynchii",
@@ -1482,7 +1649,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/black_alloplectus_j15u7x" 
     },
     {
         "BotanicalName": "Neoregelia carolinae 'Tricolor'",
@@ -1491,7 +1659,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/tricolor_bromeliad_fvkylr" 
     },
     {
         "BotanicalName": "Neoregelia spectabilis",
@@ -1500,7 +1669,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/fingernail_plant_jdr4l5" 
     },
     {
         "BotanicalName": "Neoregelia zonata",
@@ -1509,7 +1679,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/zonata_lj7crz" 
     },
     {
         "BotanicalName": "Nephrolepis exaltata 'Bostoniensis'",
@@ -1518,7 +1689,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/boston_fern_jlxkmu" 
     },
     {
         "BotanicalName": "Nephrolepis exaltata 'Fluffy Ruffles'",
@@ -1527,7 +1699,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/fluffy_ruffles_suem3d" 
     },
     {
         "BotanicalName": "Nidularium innocentii nana",
@@ -1536,7 +1709,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/miniature_bird_s_nest_jrmov8" 
     },
     {
         "BotanicalName": "Opuntia vilis",
@@ -1545,7 +1719,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/little_tree_cactus_zugplw" 
     },
     {
         "BotanicalName": "Opuntia vulgaris",
@@ -1554,7 +1729,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/irish_mittens_liriqd" 
     },
     {
         "BotanicalName": "Oxalis flava",
@@ -1563,7 +1739,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/finger_oxalis_avofo4" 
     },
     {
         "BotanicalName": "Oxalis rubra",
@@ -1572,7 +1749,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/red_oxalis_cvrmqz" 
     },
     {
         "BotanicalName": "Pachyphytum oviferum",
@@ -1581,7 +1759,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/pearly_moonstones_li0w9t" 
     },
     {
         "BotanicalName": "Pachystachys lutea",
@@ -1590,7 +1769,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/yellow_shrimp_plant_nji1nn" 
     },
     {
         "BotanicalName": "Paphiopedilum hybrids",
@@ -1599,7 +1779,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist\/Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Orchids"
+        "SuggestedSoilMix": "Orchids",
+        "CloudinaryId": "houseplants/ladyslipper_orchids_rcoonv" 
     },
     {
         "BotanicalName": "Pedilanthus tithymaloides 'Variegatus'",
@@ -1608,7 +1789,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/devil_s_backbone_ikanwn" 
     },
     {
         "BotanicalName": "Pelargonium hortorum",
@@ -1617,7 +1799,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/house_geranium_m6x1hp" 
     },
     {
         "BotanicalName": "Pelargoniium peltatum",
@@ -1626,7 +1809,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/ivy_geranium_ibytuk" 
     },
     {
         "BotanicalName": "Pellaea rotundifolia",
@@ -1635,7 +1819,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist\/Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/button_fern_pl9pac" 
     },
     {
         "BotanicalName": "Pellionia pulchra",
@@ -1644,7 +1829,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist\/Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/satin_pellionia_mwp9mx" 
     },
     {
         "BotanicalName": "Pentas lanceolata",
@@ -1653,7 +1839,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/egyptian_star_cluster_k5gben" 
     },
     {
         "BotanicalName": "Peperomia caperata",
@@ -1662,7 +1849,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/emerald_ripple_bbrxac" 
     },
     {
         "BotanicalName": "Peperomia crassifolia",
@@ -1671,7 +1859,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/leather_peperomia_o86t1m" 
     },
     {
         "BotanicalName": "Peperomia obtusifolia",
@@ -1680,7 +1869,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/baby_rubber_tree_osa4r6" 
     },
     {
         "BotanicalName": "Philodendron bipennifolium",
@@ -1689,7 +1879,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/fiddle-leaf_philodendron_ylphfo" 
     },
     {
         "BotanicalName": "Philodendron 'Emerald Queen'",
@@ -1698,7 +1889,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/emerald_queen_bnjhjo" 
     },
     {
         "BotanicalName": "Philodendron 'Florida'",
@@ -1707,7 +1899,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/florida_w5znni" 
     },
     {
         "BotanicalName": "Philodendron scandens oxycardium",
@@ -1716,7 +1909,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/heart-leaf_philodendron_uhyv00" 
     },
     {
         "BotanicalName": "Philodendron selloum",
@@ -1725,7 +1919,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/selloum_cx43cj" 
     },
     {
         "BotanicalName": "Phoenix roebelenii",
@@ -1734,7 +1929,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/pigmy_date_palm_znizp1" 
     },
     {
         "BotanicalName": "Pilea cadierei",
@@ -1743,7 +1939,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/aluminum_plant_g0mmwc" 
     },
     {
         "BotanicalName": "Pilea microphylla",
@@ -1752,7 +1949,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/artillery_plant_uvobb4" 
     },
     {
         "BotanicalName": "Platycerium bifurcatum",
@@ -1761,7 +1959,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Ferms"
+        "SuggestedSoilMix": "Ferms",
+        "CloudinaryId": "houseplants/staghorn_fern_l8psqq" 
     },
     {
         "BotanicalName": "Plectranthus australis",
@@ -1770,7 +1969,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/swedish_ivy_ppdlhj" 
     },
     {
         "BotanicalName": "Plectranthus australis",
@@ -1779,7 +1979,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/candle_plant_g19fhh" 
     },
     {
         "BotanicalName": "Podocarpus macrophyllus",
@@ -1788,7 +1989,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/podocarpus_ogfir4" 
     },
     {
         "BotanicalName": "Polyscias balfouriana 'Marginata'",
@@ -1797,7 +1999,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/variegated_balfour_aralia_fblpks" 
     },
     {
         "BotanicalName": "Polyscias fruticosa",
@@ -1806,7 +2009,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/ming_aralia_wua4ms" 
     },
     {
         "BotanicalName": "Rhapis excelsa",
@@ -1815,7 +2019,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/lady_palm_ceqwx2" 
     },
     {
         "BotanicalName": "Rhododendron hybrids",
@@ -1824,7 +2029,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/azaleas_dv5pgw" 
     },
     {
         "BotanicalName": "Ruellia graeciznas",
@@ -1833,7 +2039,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Flowering house plants"
+        "SuggestedSoilMix": "Flowering house plants",
+        "CloudinaryId": "houseplants/red-spray_ruellia_uiv6y9" 
     },
     {
         "BotanicalName": "Saintpaulia hybrids",
@@ -1842,7 +2049,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/red-african_violet_ih2fl6" 
     },
     {
         "BotanicalName": "Sansevieria parva",
@@ -1851,7 +2059,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/parva_sansevieria_y0qd7k" 
     },
     {
         "BotanicalName": "Sansevieria trifasciata 'Hahnii'",
@@ -1860,7 +2069,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/birdsnest_sansivieria_rlg5al" 
     },
     {
         "BotanicalName": "Sansevieria trifasciata 'Laurentii'",
@@ -1869,7 +2079,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/gold-banded_sansevieria_ysf9kg" 
     },
     {
         "BotanicalName": "Saxifraga stolonifera",
@@ -1878,7 +2089,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/strawberry_geranium_zof7ad" 
     },
     {
         "BotanicalName": "Schlumbergera bridgesii",
@@ -1887,7 +2099,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/christmas_cactus_sftwhx" 
     },
     {
         "BotanicalName": "Schlumbergera truncata",
@@ -1896,7 +2109,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/christmas_cactus_sftwhx" 
     },
     {
         "BotanicalName": "Scindapsus pictus",
@@ -1905,7 +2119,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/silver_pothos_ggfpry" 
     },
     {
         "BotanicalName": "Sedum spectabile",
@@ -1914,7 +2129,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti", 
+        "CloudinaryId": "houseplants/showy_sedum_jbi5eu" 
     },
     {
         "BotanicalName": "Sempervivum arachniodeum",
@@ -1923,7 +2139,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/cow_web_houseleek_vdnlod" 
     },
     {
         "BotanicalName": "Setcreasea pallida 'Purple Heart'",
@@ -1932,7 +2149,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/purple_heart_iwu2di" 
     },
     {
         "BotanicalName": "Sinningia speciosa",
@@ -1941,7 +2159,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/gloxinia_klobwe" 
     },
     {
         "BotanicalName": "Soleirolia soleirolii",
@@ -1950,7 +2169,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "High: 50% or higher\/Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/baby_tears_qwbaz3" 
     },
     {
         "BotanicalName": "Spathiphyllum 'Clevelandii'",
@@ -1959,7 +2179,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/peace_lily_xtlheu" 
     },
     {
         "BotanicalName": "Spathiphyllum 'Mauna Loa'",
@@ -1968,7 +2189,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Keep soil mix moist",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/mauna_loa_t5syrd" 
     },
     {
         "BotanicalName": "Stapelia nobilis",
@@ -1977,7 +2199,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%\/Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering\/Soil mix can become moderately dry before re-watering",
-        "SuggestedSoilMix": "Succulents and cacti"
+        "SuggestedSoilMix": "Succulents and cacti",
+        "CloudinaryId": "houseplants/carrion_flower_l8d9b7" 
     },
     {
         "BotanicalName": "Streptocarpus x hybridus",
@@ -1986,7 +2209,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "African violets and other Gesneriads"
+        "SuggestedSoilMix": "African violets and other Gesneriads",
+        "CloudinaryId": "houseplants/cape_primrose_ts5lqc" 
     },
     {
         "BotanicalName": "Strobilanthes dyeranum",
@@ -1995,7 +2219,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/persian_shield_dctopt" 
     },
     {
         "BotanicalName": "Syngonium podophyllum",
@@ -2004,7 +2229,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/nephthytis_ogl6mk" 
     },
     {
         "BotanicalName": "Trillandsia bulbosa",
@@ -2013,7 +2239,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/dancing_bulb_a2ipg8" 
     },
     {
         "BotanicalName": "Tillandsia lindenii",
@@ -2022,7 +2249,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/blue-flowered_torch_yncb52" 
     },
     {
         "BotanicalName": "Tolmiea menziesii",
@@ -2031,7 +2259,8 @@
         "Temperature": "Cool: 50°F night, 65°F day temperatures\/Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/piggyback_plant_r1oggm" 
     },
     {
         "BotanicalName": "Tradescantia blossfeldiana",
@@ -2040,7 +2269,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/flowering_inch_plant_iyhjqf" 
     },
     {
         "BotanicalName": "Tradescantia sillamontana",
@@ -2049,7 +2279,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/white_velvet_v82azc" 
     },
     {
         "BotanicalName": "Vriesea splendens",
@@ -2058,7 +2289,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Bromeliads"
+        "SuggestedSoilMix": "Bromeliads",
+        "CloudinaryId": "houseplants/flaming_sword_qllb5i" 
     },
     {
         "BotanicalName": "Yucca elephantipes",
@@ -2067,7 +2299,8 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Low: 5% to 24%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/spineless_yucca_fjhrfo" 
     },
     {
         "BotanicalName": "Zebrina pendula",
@@ -2076,6 +2309,7 @@
         "Temperature": "Average: 65°F night, 75°F day temperatures",
         "RelativeHumidity": "Average: 25% to 49%",
         "Water": "Surface of soil mix should dry before re-watering",
-        "SuggestedSoilMix": "Foliage plants"
+        "SuggestedSoilMix": "Foliage plants",
+        "CloudinaryId": "houseplants/wandering_jewel_nc46qs" 
     }
 ]

@@ -1,48 +1,39 @@
 const mongoose = require('mongoose')
 
 const plantSchema = new mongoose.Schema({
-  botanicalName: {
+  BotanicalName: {
     type: String,
     required: true
   },
-  commonName: {
+  CommonName: {
     type: String,
     required: true  
   },
-  light: {
+  Light: {
     type: String,
     required: true  
   },
-  temperature: {
+  Temperature: {
     type: String,
     required: true 
   },
-  relativeHumidity: {
+  RelativeHumidity: {
     type: String,
     required: true 
   },
-  water: {
+  Water: {
     type: String,
     required: true 
   },
-  suggestedSoilMix: {
+  SuggestedSoilMix: {
     type: String,
     required: true 
   },
-  defaultImage: {
-    type: Buffer,
-  },
-  defaultImageType: {
+  Cloudinary_id: {
     type: String,
   },
-}, {
-  collection : 'basic-plant-json'
 })
 
-plantSchema.virtual('defaultImagePath').get(function() {
-    if (this.defaultImage != null && this.defaultImage != null) {
-      return `data:${this.defaultImageType};charset=utf-8;base64,${this.defaultImage.toString('base64')}`
-    }
-  })  
+const Plant = mongoose.model('Plant', plantSchema, 'basic-plant-json');
 
-module.exports = mongoose.model('Plant', plantSchema, 'basic-plant-json')
+module.exports = Plant
