@@ -2,7 +2,7 @@
 <div>
     <% plants.forEach((plant, index) => { %>
       <a href="plants/<%= plant._id %>">
-        <%= plantsImageTags[index] %>
+        <%- plantsImageTags[index] %>
         <!-- <img height="150" width="100" src="<%= plant.defaultImagePath %>"> -->
         <h3><%= plant.CommonName %></h3>
       </a>
