@@ -12,14 +12,15 @@ router.get('/', async (req, res) => {
         plants = await Plant.aggregate([
             {$sample: {size: 10}}
         ], function (err, docs) {
-            console.log(docs)
             return docs
         })
-        plantsImageTags = plants.map(async plant => {
+        plantsImageTags = Promise.all(plants.map(async plant => {
             console.log(plant.CloudinaryId)
             const imageTag = await createImageTag(plant.CloudinaryId);
-            return Promise.resolve(imageTag);
-        })
+            console.log(imageTag)
+            return imageTag;
+        }))
+        console.log(plantsImageTags)
     } catch {
         console.log("oops! error")
         plants = []
@@ -40,7 +41,7 @@ async function createImageTag (publicId) {
           { width: 250, height: 250, crop: 'thumb' },
         ],
       });
-      return Promise.resolve(imageTag);
+      return imageTag
   };
 
 module.exports = router;
