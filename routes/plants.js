@@ -5,21 +5,38 @@ const upload = require('../utils/multer')
 const cloudinary = require('../utils/cloudinary')
 
 // All Plants Route
-router.get('/', async (req, res) => {
+// currently loads a LOT of plants, and doesn't load images at all.
+router.get('/search', async (req, res) => {
   let query = Plant.find()
-  if (req.query.commonName != null && req.query.commonName != '') {
-    query = query.regex('commonName', new RegExp(req.query.commonName, 'i'))
+  console.log(req.query.CommonName)
+  if (req.query.CommonName != null && req.query.CommonName != '') {
+    query = query.regex('CommonName', new RegExp(req.query.CommonName, 'i'))
   }
-  if (req.query.botanicalName != null && req.query.botanicalName != '') {
-    query = query.regex('botanicalName', new RegExp(req.query.botanicalName, 'i'))
+  if (req.query.BotanicalName != null && req.query.BotanicalName != '') {
+    query = query.regex('BotanicalName', new RegExp(req.query.BotanicalName, 'i'))
   }
   try {
     const plants = await query.exec()
-    res.render('plants/index', {
-      plants: plants,
-      searchOptions: req.query
-    })
+    console.log(plants)
+    let plantsImageTags = await Promise.all(plants.map(async plant => {
+      const imageTag = await createImageTag(plant.CloudinaryId);
+      return imageTag;
+    }))
+    if (req.query.CommonName !== undefined && req.query.BotanicalName !== undefined) {
+      res.render('plants/search', {
+        plants: plants,
+        plantsImageTags: plantsImageTags,
+        searchOptions: req.query
+      })
+    } else {
+      res.render('plants/search', {
+        plants: [],
+        plantsImageTags: [],
+        searchOptions: req.query
+      })
+    }
   } catch {
+    console.log('error!')
     res.redirect('/')
   }
 })
@@ -101,7 +118,7 @@ async function createImageTag (publicId) {
   // Create an image tag with transformations applied to the src URL
   let imageTag = cloudinary.image(publicId, {
       transformation: [
-        { width: 350, crop: 'thumb' },
+        { width: 200, height: 200, crop: 'thumb' }, 
       ],
     });
     return imageTag
