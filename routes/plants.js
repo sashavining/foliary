@@ -4,15 +4,6 @@ const Plant = require('../models/plant.js')
 const upload = require('../utils/multer')
 const cloudinary = require('../utils/cloudinary')
 
-
-const careNeeds = {
-  light: ['Low', 'Medium', 'High', 'Sunny'],
-  temperature: [],
-  humidity: [],
-  water: [],
-  soil: [],
-}
-
 router.get('/search', async (req, res) => {
   let query = Plant.find()
   if (req.query.CommonName != null && req.query.CommonName != '') {
@@ -21,11 +12,9 @@ router.get('/search', async (req, res) => {
   if (req.query.BotanicalName != null && req.query.BotanicalName != '') {
     query = query.regex('BotanicalName', new RegExp(req.query.BotanicalName, 'i'))
   }
-  if (req.query.light != null) {
-    console.log(req.query.light);
-    console.log(careNeeds.light[req.query.light]);
-    query = query.regex('Light', new RegExp(careNeeds.light[req.query.light], 'i'))
-    console.log(query)
+  if (req.query.Light != null && req.query.Light != '') {
+    console.log(req.query.Light);
+    query = query.regex('Light', new RegExp(req.query.Light, 'i'))
   }
   try {
     const plants = await query.exec()
