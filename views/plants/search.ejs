@@ -17,76 +17,66 @@
   <div>
     <fieldset>
       <legend>Light needs:</legend>
-        <input type="radio" id="light0" name="light_needs" value="0">
-        <label for="light0">Lowest Light</label>
-        <input type="radio" id="light1" name="light_needs" value="1">
-        <label for="light1">Low Light</label>
-        <input type="radio" id="light2" name="light_needs" value="2">
-        <label for="light2">Mid Light</label>
-        <input type="radio" id="light3" name="light_needs" value="3">
-        <label for="light3">High Light</label>
-        <input type="radio" id="light4" name="light_needs" value="4">
-        <label for="light4">Highest Light</label> 
+        <input type="radio" id="light0" name="light" value="0">
+        <label for="light0">Low Light (25 ft-c to 75 ft-c)</label>
+        <input type="radio" id="light1" name="light" value="1">
+        <label for="light1">Medium Light (75 ft-c to 200 ft-c)</label>
+        <input type="radio" id="light2" name="light" value="2">
+        <label for="light2">High Light (Over 200 ft-c, but not direct sun)</label>
+        <input type="radio" id="light3" name="light" value="3">
+        <label for="light3">Sunny Light (At least 4 hours of direct sun)</label>
     </fieldset>
   </div>
   <div>
     <fieldset>
       <legend>Temperature:</legend>
       <input type="radio" id="temperature0" name="temperature" value="0">
-      <label for="temperature0">Lowest Temperature</label> 
+      <label for="temperature0">Cool: 50°F night, 65°F day temperatures</label> 
         <input type="radio" id="temperature1" name="temperature" value="1">
-        <label for="temperature1">Low Temperature</label>
+        <label for="temperature1">Average: 65°F night, 75°F day temperatures</label>
         <input type="radio" id="temperature2" name="temperature" value="2">
-        <label for="temperature2">Mid Temperature</label>
-        <input type="radio" id="temperature3" name="temperature" value="3">
-        <label for="temperature3">High Temperature</label>
-        <input type="radio" id="temperature4" name="temperature" value="4">
-        <label for="temperature4">Highest Temperature</label>
+        <label for="temperature2">Warm: 70°F night, 85°F day temperatures</label>
     </fieldset>
   </div>
   <div>
     <fieldset>
       <legend>Humidity:</legend>
         <input type="radio" id="humidity0" name="humidity" value="0">
-        <label for="humidity0">Lowest Humidity</label>
+        <label for="humidity0">Low: 5% to 24%</label>
         <input type="radio" id="humidity1" name="humidity" value="1">
-        <label for="humidity1">Low Humidity</label>
+        <label for="humidity1">Average: 25% to 49% </label>
         <input type="radio" id="humidity2" name="humidity" value="2">
-        <label for="humidity2">Mid Humidity</label>
-        <input type="radio" id="humidity3" name="humidity" value="3">
-        <label for="humidity3">High Humidity</label>
-        <input type="radio" id="humidity4" name="humidity" value="4">
-        <label for="humidity4">Highest Humidity</label> 
+        <label for="humidity2">High: 50% or higher</label>
     </fieldset>
   </div>
   <div>
     <fieldset>
       <legend>Water:</legend>
         <input type="radio" id="water0" name="water" value="0">
-        <label for="water0">Lowest Water</label>
+        <label for="water0">Soil mix can become moderately dry before re-watering</label>
         <input type="radio" id="water1" name="water" value="1">
-        <label for="water1">Low Water</label>
+        <label for="water1">Surface of soil mix should dry before re-watering</label>
         <input type="radio" id="water2" name="water" value="2">
-        <label for="water2">Mid Water</label>
-        <input type="radio" id="water3" name="water" value="3">
-        <label for="water3">High Water</label>
-        <input type="radio" id="water4" name="water" value="4">
-        <label for="water4">Highest Water</label> 
+        <label for="water2">Keep soil mix moist</label>
     </fieldset>
   </div>
   <div>
     <fieldset>
       <legend>Soil Mix:</legend>
         <input type="radio" id="soil0" name="soil" value="0">
-        <label for="soil0">Soil Mix 1</label>
+        <label for="soil0">Flowering house plants</label>
         <input type="radio" id="soil1" name="soil" value="1">
-        <label for="soil1">Soil Mix 2</label>
+        <label for="soil1">Foliage plants</label>
         <input type="radio" id="soil2" name="soil" value="2">
-        <label for="soil2">Soil Mix 3</label>
+        <label for="soil2">Bromeliads</label>
         <input type="radio" id="soil3" name="soil" value="3">
-        <label for="soil3">Soil Mix 4</label>
+        <label for="soil3">Orchids</label>
         <input type="radio" id="soil4" name="soil" value="4">
-        <label for="soil4">Soil Mix 5</label> 
+        <label for="soil4">Succulents and cacti</label> 
+        <input type="radio" id="soil5" name="soil" value="5">
+        <label for="soil5">Ferns</label> 
+        <input type="radio" id="soil6" name="soil" value="6">
+        <label for="soil6">African violets and other Gesneriads</label> 
     </fieldset>
   </div>
   <button type="submit">Search</button>

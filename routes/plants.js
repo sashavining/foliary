@@ -4,20 +4,31 @@ const Plant = require('../models/plant.js')
 const upload = require('../utils/multer')
 const cloudinary = require('../utils/cloudinary')
 
-// All Plants Route
-// currently loads a LOT of plants, and doesn't load images at all.
+
+const careNeeds = {
+  light: ['Low', 'Medium', 'High', 'Sunny'],
+  temperature: [],
+  humidity: [],
+  water: [],
+  soil: [],
+}
+
 router.get('/search', async (req, res) => {
   let query = Plant.find()
-  console.log(req.query.CommonName)
   if (req.query.CommonName != null && req.query.CommonName != '') {
     query = query.regex('CommonName', new RegExp(req.query.CommonName, 'i'))
   }
   if (req.query.BotanicalName != null && req.query.BotanicalName != '') {
     query = query.regex('BotanicalName', new RegExp(req.query.BotanicalName, 'i'))
   }
+  if (req.query.light != null) {
+    console.log(req.query.light);
+    console.log(careNeeds.light[req.query.light]);
+    query = query.regex('Light', new RegExp(careNeeds.light[req.query.light], 'i'))
+    console.log(query)
+  }
   try {
     const plants = await query.exec()
-    console.log(plants)
     let plantsImageTags = await Promise.all(plants.map(async plant => {
       const imageTag = await createImageTag(plant.CloudinaryId);
       return imageTag;
@@ -45,8 +56,6 @@ router.get('/search', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const plant = await Plant.findById(req.params.id).exec()
-    console.log(plant) // why undefined?
-    console.log(plant.CloudinaryId) // why undefined?
     const plantImageTag = await createImageTag(plant.CloudinaryId);
     res.render('plants/show', { plant: plant, plantImageTag: plantImageTag })
   } catch {
