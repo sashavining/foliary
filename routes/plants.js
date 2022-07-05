@@ -13,8 +13,19 @@ router.get('/search', async (req, res) => {
     query = query.regex('BotanicalName', new RegExp(req.query.BotanicalName, 'i'))
   }
   if (req.query.Light != null && req.query.Light != '') {
-    console.log(req.query.Light);
     query = query.regex('Light', new RegExp(req.query.Light, 'i'))
+  }
+  if (req.query.Temperature != null && req.query.Temperature != '') {
+    query = query.regex('Temperature', new RegExp(req.query.Temperature, 'i'))
+  }
+  if (req.query.RelativeHumidity != null && req.query.RelativeHumidity != '') {
+    query = query.regex('RelativeHumidity', new RegExp(req.query.RelativeHumidity, 'i'))
+  }
+  if (req.query.Water != null && req.query.Water != '') {
+    query = query.regex('Water', new RegExp(req.query.Water, 'i'))
+  }
+  if (req.query.SuggestedSoilMix != null && req.query.SuggestedSoilMix != '') {
+    query = query.regex('SuggestedSoilMix', new RegExp(req.query.SuggestedSoilMix, 'i'))
   }
   try {
     const plants = await query.exec()
@@ -22,7 +33,13 @@ router.get('/search', async (req, res) => {
       const imageTag = await createImageTag(plant.CloudinaryId);
       return imageTag;
     }))
-    if (req.query.CommonName !== undefined && req.query.BotanicalName !== undefined) {
+    if (req.query.CommonName !== undefined || 
+        req.query.BotanicalName !== undefined ||
+        req.query.Light !== undefined ||
+        req.query.Temperature !== undefined ||
+        req.query.RelativeHumidity !== undefined ||
+        req.query.Water !== undefined ||
+        req.query.SuggestedSoilMix !== undefined) {
       res.render('plants/search', {
         plants: plants,
         plantsImageTags: plantsImageTags,
@@ -31,7 +48,7 @@ router.get('/search', async (req, res) => {
     } else {
       res.render('plants/search', {
         plants: [],
-        plantsImageTags: [],
+        plantsImageTags: plantsImageTags,
         searchOptions: req.query
       })
     }
@@ -46,8 +63,16 @@ router.get('/:id', async (req, res) => {
   try {
     const plant = await Plant.findById(req.params.id).exec()
     const plantImageTag = await createImageTag(plant.CloudinaryId);
-    res.render('plants/show', { plant: plant, plantImageTag: plantImageTag })
-  } catch {
+    const allPlants = await Plant.find();
+    const similarPlants = await findSimilar(plant, allPlants);
+    const similarPlantsImageTags = await Promise.all(similarPlants.map(async plant => {
+      const imageTag = await createImageTag(plant.CloudinaryId);
+      return imageTag;
+    }))
+    //const similarPlantsImageTag 
+    res.render('plants/show', { plant: plant, plantImageTag: plantImageTag, similarPlants: similarPlants, similarPlantsImageTags: similarPlantsImageTags})
+  } catch (err) {
+    console.log(err)
     res.redirect('/')
   }
 })
@@ -121,5 +146,33 @@ async function createImageTag (publicId) {
     });
     return imageTag
 };
+
+function findSimilar (plant, plantsArray) {
+  return plantsArray.filter(function (plantToBeCompared) {
+    if (plant.BotanicalName === plantToBeCompared.BotanicalName) return false
+    if (this.count >= 5) return false;
+    if (plant.BotanicalName.split(" ") === plantToBeCompared.BotanicalName.split(" ")) {
+      console.log(this.count)
+      this.count++
+      return plantToBeCompared
+    } else if (atLeastFourPropertiesSame(plant, plantToBeCompared)) {
+      console.log(this.count)
+      this.count++
+      return plantToBeCompared
+    }
+  }, {count: 0})
+}
+
+function atLeastFourPropertiesSame (item1, item2) {
+  let similarity = 0
+  if (item1.Light === item2.Light) similarity++
+  if (item1.Temperature === item2.Temperature) similarity++
+  if (item1.RelativeHumidity === item2.RelativeHumidity) similarity++
+  if (item1.Water === item2.Water) similarity++
+  if (item1.SuggestedSoilMix === item2.SuggestedSoilMix) similarity++
+
+  if (similarity >= 4) return true;
+  else return false;
+}
 
 module.exports = router

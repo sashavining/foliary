@@ -1,4 +1,6 @@
+<h2>Plant Detail</h2>
 <div class="plant-details-grid">
+  <h3>Plant Information</h3>
     <%- plantImageTag %>
     <div class="plant-details-label">Common Name:</div>
     <div><%= plant.CommonName %></div>
@@ -8,8 +10,18 @@
     <div><%= plant.Light %></div>
     <div class="plant-details-label">Temperature Needs:</div>
     <div><%= plant.Temperature %></div>
+    <div class="plant-details-label">Watering Schedule:</div>
+    <div><%= plant.Water %></div>
     <div class="plant-details-label">Ideal Humidity:</div>
     <div><%= plant.RelativeHumidity %></div>
     <div class="plant-details-label">Suggested Soil Mix:</div>
     <div><%= plant.SuggestedSoilMix %></div>
   </div>
+<h3>Similar Plants:</h3>
+<% similarPlants.forEach((plant, index) => { %>
+  <a href="/plants/<%= plant._id %>">
+    <div>
+      <%- similarPlantsImageTags[index] %>
+    </div>
+  </a>
+<% }) %>
