@@ -3,6 +3,21 @@
         <a href="/">Foliary</a>
         <ul>
             <li><a href="/plants/search">Search Plants</a></li>
+            <!-- you need to pass the user data to every single view that has this partial - UGH!-->
+             <li>  <% if (currentUser) {%>
+                WELCOME BACK <%= currentUser.name %>
+                <a href="/users/logout">LOG OUT</a>
+              <% } else { %>
+                <h1>please log in</h1>
+                <form action="/users/login" method="POST">
+                  <label for="username">Username</label>
+                  <input name="username" placeholder="username" type="text" />
+                  <label for="password">Password</label>
+                  <input name="password" type="password" />
+                  <button>Log In</button>
+                </form>
+              <%}%>
+            </li> -->
         </ul>
     </nav>
 </header>

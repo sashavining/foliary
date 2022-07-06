@@ -8,10 +8,15 @@ const app = express()
 const expressLayouts = require('express-ejs-layouts')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
-/*const cl = new Cloudinary({cloud_name: process.env.CLOUD_NAME, secure: true});*/
+const flash = require('express-flash')
+const session = require('express-session')
+const passport = require('passport')
+
 
 const indexRouter = require('./routes/index')
 const plantRouter = require('./routes/plants')
+const userRouter = require('./routes/users')
+
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -21,6 +26,20 @@ app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.json())
+app.use(flash())
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}))
+app.use(passport.initialize())
+app.use(passport.session())
+app.use(methodOverride('_method'))
+app.use(function(req, res, next) {
+  res.locals.currentUser = req.user;
+  next();
+});
+
 
 
 const mongoose = require('mongoose')
@@ -32,5 +51,6 @@ db.once('open', () => console.log('Connected to Mongoose'))
 
 app.use('/', indexRouter)
 app.use('/plants', plantRouter)
+app.use('/users', userRouter)
 
 app.listen(process.env.PORT || 8000)
