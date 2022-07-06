@@ -27,18 +27,17 @@ app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.json())
 app.use(flash())
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: false,
-  saveUninitialized: false
-}))
 app.use(passport.initialize())
-app.use(passport.session())
 app.use(methodOverride('_method'))
 app.use(function(req, res, next) {
   res.locals.currentUser = req.user;
   next();
 });
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  resave: false,
+  saveUninitialized: false
+}))
 
 
 
@@ -47,6 +46,10 @@ mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', error => console.error(error))
 db.once('open', () => console.log('Connected to Mongoose'))
+
+// const MongoStore = require('connect-mongo')(session);
+// const connection = mongoose.createConnection(process.env.DATABASE_URL);
+// const sessionStore = new MongoStore({ mongooseConnection: connection, collection: 'sessions' })
 
 
 app.use('/', indexRouter)

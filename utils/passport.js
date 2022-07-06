@@ -21,8 +21,8 @@ function initialize (passport) {
 
     // passport.use(new localStrategy({ usernameField: 'email' }, authenticateUser))
     passport.use(
-        new LocalStrategy((email, password, done) => {
-          User.findOne({ email: email }, (err, user) => {
+        new LocalStrategy((username, password, done) => {
+          User.findOne({ username: username }, (err, user) => {
             if (err) { 
               return done(err);
             }
