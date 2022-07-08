@@ -8,11 +8,10 @@ const app = express()
 const expressLayouts = require('express-ejs-layouts')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
+const cookieParser = require("cookie-parser");
+const { adminAuth, userAuth } = require('./utils/auth');
+
 /*const cl = new Cloudinary({cloud_name: process.env.CLOUD_NAME, secure: true});*/
-
-const indexRouter = require('./routes/index')
-const plantRouter = require('./routes/plants')
-
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
@@ -21,6 +20,21 @@ app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.json())
+app.use(cookieParser())
+
+app.get("/register", (req, res) => res.render("users/register"));
+app.get("/login", (req, res) => res.render("users/login"));
+app.get("/logout", (req, res) => {
+  res.cookie("jwt", "", { maxAge: "1" });
+  res.redirect("/");
+});
+app.get("/admin", adminAuth, (req, res) => res.render("users/admin"));
+app.get("/basic", userAuth, (req, res) => res.render("users/user")); // problem with this route
+
+const indexRouter = require('./routes/index')
+const plantRouter = require('./routes/plants')
+const userRouter = require('./routes/auth')
+
 
 
 const mongoose = require('mongoose')
@@ -32,5 +46,12 @@ db.once('open', () => console.log('Connected to Mongoose'))
 
 app.use('/', indexRouter)
 app.use('/plants', plantRouter)
+app.use('/auth', userRouter)
+
 
 app.listen(process.env.PORT || 8000)
+
+process.on("unhandledRejection", (err) => {
+  console.log(`An error occurred: ${err.message}`);
+  server.close(() => process.exit(1));
+});

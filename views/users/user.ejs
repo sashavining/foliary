@@ -1,0 +1,19 @@
+<h1>Users</h1>
+<ul></ul>
+<button class="logout"> <a href="/logout">Log Out</a></button>
+<script>
+  const ul = document.querySelector('ul')
+  const getUsers = async() => {
+    const res = await fetch('/auth/getUsers')
+    const data = await res.json()
+    data.user.map((mappedUser)=> {
+      if (mappedUser.username !== 'admin') {
+        let li = `<li> <b>Username</b> => ${mappedUser.username} <br> <b>Role</b> => ${mappedUser.role} </li>`
+        ul.innerHTML += li
+      } else {
+        return null
+      }
+    })
+  }
+  getUsers()
+</script>
