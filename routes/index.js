@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     let plantsImageTags;
     try {
         plants = await Plant.aggregate([
-            {$sample: {size: 10}}
+            {$sample: {size: 4}}
         ], function (err, docs) {
             return docs
         })
@@ -29,7 +29,8 @@ async function createImageTag (publicId) {
     // Create an image tag with transformations applied to the src URL
     let imageTag = cloudinary.image(publicId, {
         transformation: [
-          { width: 200, height: 200, crop: 'thumb' }, // check this out for more options: https://cloudinary.com/documentation/node_quickstart
+          { width: 300, height: 300, crop: 'thumb' },
+          { radius: 50 } // check this out for more options: https://cloudinary.com/documentation/node_quickstart
         ],
       });
       return imageTag

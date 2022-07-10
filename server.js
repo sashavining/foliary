@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.json())
 app.use(cookieParser())
 
+
 app.get("/register", (req, res) => res.render("users/register"));
 app.get("/login", (req, res) => res.render("users/login"));
 app.get("/logout", (req, res) => {

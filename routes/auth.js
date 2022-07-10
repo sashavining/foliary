@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const User = require('../models/User')
-const { register, login, update, deleteUser, getUsers } = require("../auth/authFunc.js");
+const { register, login, update, deleteUser, getUsers } = require("../auth/auth.js");
 
 router.route("/register").post(register)
 router.route("/login").post(login);

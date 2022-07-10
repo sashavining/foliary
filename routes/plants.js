@@ -5,7 +5,7 @@ const upload = require('../utils/multer')
 const cloudinary = require('../utils/cloudinary')
 
 router.get('/search', async (req, res) => {
-  let query = Plant.find()
+  let query = Plant.find().limit(20)
   if (req.query.CommonName != null && req.query.CommonName != '') {
     query = query.regex('CommonName', new RegExp(req.query.CommonName, 'i'))
   }
@@ -24,13 +24,11 @@ router.get('/search', async (req, res) => {
   if (req.query.Water != null && req.query.Water != '') {
     query = query.regex('Water', new RegExp(req.query.Water, 'i'))
   }
-  if (req.query.SuggestedSoilMix != null && req.query.SuggestedSoilMix != '') {
-    query = query.regex('SuggestedSoilMix', new RegExp(req.query.SuggestedSoilMix, 'i'))
-  }
+
   try {
     const plants = await query.exec()
     let plantsImageTags = await Promise.all(plants.map(async plant => {
-      const imageTag = await createImageTag(plant.CloudinaryId);
+      const imageTag = await createImageTag(plant.CloudinaryId, 230, 230);
       return imageTag;
     }))
     if (req.query.CommonName !== undefined || 
@@ -38,14 +36,15 @@ router.get('/search', async (req, res) => {
         req.query.Light !== undefined ||
         req.query.Temperature !== undefined ||
         req.query.RelativeHumidity !== undefined ||
-        req.query.Water !== undefined ||
-        req.query.SuggestedSoilMix !== undefined) {
+        req.query.Water !== undefined) {
+      console.log('searching!')
       res.render('plants/search', {
         plants: plants,
         plantsImageTags: plantsImageTags,
         searchOptions: req.query
       })
     } else {
+      console.log('no query parameters!')
       res.render('plants/search', {
         plants: [],
         plantsImageTags: plantsImageTags,
@@ -62,11 +61,11 @@ router.get('/search', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const plant = await Plant.findById(req.params.id).exec()
-    const plantImageTag = await createImageTag(plant.CloudinaryId);
+    const plantImageTag = await createImageTag(plant.CloudinaryId, 400, 400);
     const allPlants = await Plant.find();
     const similarPlants = await findSimilar(plant, allPlants);
     const similarPlantsImageTags = await Promise.all(similarPlants.map(async plant => {
-      const imageTag = await createImageTag(plant.CloudinaryId);
+      const imageTag = await createImageTag(plant.CloudinaryId, 250, 250);
       return imageTag;
     }))
     //const similarPlantsImageTag 
@@ -137,11 +136,12 @@ router.put('/:id', upload.single("image"), async(req, res) => {
   }
 })
 */
-async function createImageTag (publicId) {
+async function createImageTag (publicId, width, height) {
   // Create an image tag with transformations applied to the src URL
   let imageTag = cloudinary.image(publicId, {
       transformation: [
-        { width: 200, height: 200, crop: 'thumb' }, 
+        { width: width, height: height, crop: 'thumb' }, 
+        { radius: 50 },
       ],
     });
     return imageTag
@@ -150,7 +150,7 @@ async function createImageTag (publicId) {
 function findSimilar (plant, plantsArray) {
   return plantsArray.filter(function (plantToBeCompared) {
     if (plant.BotanicalName === plantToBeCompared.BotanicalName) return false
-    if (this.count >= 5) return false;
+    if (this.count >= 8) return false;
     if (plant.BotanicalName.split(" ") === plantToBeCompared.BotanicalName.split(" ")) {
       console.log(this.count)
       this.count++
