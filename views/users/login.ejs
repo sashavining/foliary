@@ -1,18 +1,20 @@
-<h2>Log in</h2>
-<% if (messages.error) { %>
-    <%= messages.error %>
-<% } %>
-<form action="/users/login" method="POST">
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+<main class="form-signin text-center mt-4">
+  <form action="/login" method="POST">
+    <i class="bi bi-flower3 text-warning mb-4 display-3"></i>
+    <h1 class="h2 mb-5 fw-normal">Log in</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control mb-3" id="username" placeholder="Username" name="username" required>
+      <label for="username">Username</label>
     </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+    <div class="form-floating">
+      <input type="password" class="form-control mb-3" id="password" placeholder="Password" name="password" required>
+      <label for="password">Password</label>
     </div>
-    <button type="submit">
-        Login
-    </button>
-</form>
-<a href="/users/register">register</a>
+
+    <button class="w-100 btn btn-lg btn-success mb-3" type="submit" value="login">Login</button>
+    <div class="error" style="color: red;"></div><br>
+    <a href="/register" class="text-success">Don't have an accout? Register</a>
+  </form>
+</main>
+

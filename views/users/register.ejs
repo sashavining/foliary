@@ -1,19 +1,20 @@
-<h2>Register</h2>
-<form action="/users/register" method="POST">
-    <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
+
+  <main class="form-signin text-center mt-4">
+    <form action="/register" method="POST">
+      <i class="bi bi-flower3 text-warning mb-4 display-3"></i>
+      <h1 class="h2 mb-5 fw-normal">Register</h1>
+  
+      <div class="form-floating">
+        <input type="text" class="form-control mb-3" id="username" placeholder="Username" name="username" required>
+        <label for="username">Username</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control mb-3" id="password" placeholder="Password" name="password" required>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-    </div>
-    <button type="submit">
-        Register
-    </button>
-</form>
-<a href="/users/login">Login</a>
+      </div>
+  
+      <button class="w-100 btn btn-lg btn-success mb-3" type="submit">Register</button>
+      <div class="error" style="color: red;"></div><br>
+      <a href="/login" class="text-success">Already have an account? Login</a>
+    </form>
+  </main>
