@@ -7,7 +7,7 @@
       <div>
         <h1>Houseplant care, <span class="text-warning">simplified</span></h1>
         <p class="lead my-4">Foliary is an elegant, one-stop solution for houseplant selection, research, and care.</p>
-        <a class="btn btn-dark btn-lg">Take our houseplant quiz</a>
+        <a href="/plants/quiz" class="btn btn-dark btn-lg">Get a plant recommendation</a>
       </div>
       <img class="px-4 img-fluid w-50 d-none d-sm-block" src="undraw_flowers_vx06-3.svg" alt="Woman sitting on open box with flowers appearing out of it">
     </div>
@@ -60,8 +60,10 @@
       <h2 class="mb-3 mb-md-0">Quick Search:</h2>
       <div class="input-group news-input">
           <!-- want this to redirect to the search page and search by common name  -->
-          <input type="text" class="form-control" placeholder="Plant name (common name)" aria-label="Plant name (common name)" aria-describedby="button-addon2" name="CommonName">
-          <button class="btn btn-dark btn-lg" id="button-addon2" type="button">Search</button>
+          <form action="/plants/search" method="GET">
+            <input type="text" class="form-control" placeholder="Plant name (common name)" aria-label="Plant name (common name)" aria-describedby="button-addon2" name="CommonName">
+            <button class="btn btn-dark btn-lg" id="button-addon2" type="submit">Search</button>
+          </form>
         <!-- /plants/search?CommonName=silver&BotanicalName= -->
       </div>
     </div>

@@ -6,12 +6,12 @@
     <div class="col-md">
       <h2 class="border-bottom pb-3">Search by name:</h2>
       <form action="/plants/search" method="GET">
-          <div class="form-group my-3">
-            <label for="CommonName">Common Name</label>
+          <div class="form-group my-4">
+            <label style="font-size:1.5rem" for="CommonName">Common Name</label>
             <input class="form-control" type="text" name="CommonName" value="<%= searchOptions.CommonName %>" id="CommonName" placeholder="Enter Common Name">         
           </div>
-          <div class="form-group mt-3 mb-3">
-            <label for="BotanicalName">Botanical Name</label>
+          <div class="form-group my-4">
+            <label style="font-size:1.5rem" for="BotanicalName">Botanical Name</label>
             <input class="form-control" type="text" name="BotanicalName" value="<%= searchOptions.BotanicalName %>" id="BotanicalName" placeholder="Enter Botanical Name">         
           </div>
           <button type="submit" class="w-100 btn btn-lg btn-success mb-3">Search</button>
@@ -20,7 +20,7 @@
     <div class="col-md col-md-3 my-5 text-md-center">
       <span class="h1">OR...</span>
     </div>
-    <div class="col-md">
+    <div class="col-md care-needs-search">
       <h2 class="border-bottom pb-3">Search by care needs:</h2>
       <form action="/plants/search" method="GET">
         <div>
@@ -149,7 +149,7 @@
 
 
 
-<section class="text-center pb-5">
+<section class="text-center pb-5" id="results">
   <% if (plants.length > 0) { %> 
     <h2 class="h1 text-success text-center my-5 border-bottom pb-3">Results</h2>
     <div class="container">
@@ -163,6 +163,8 @@
         <% }) %>
       </div>
     </div>
+  <% } else if (queryRan === true) { %>
+    <%- include('../partials/noPlantFound.ejs') %>
   <% } %>
 </section>
 

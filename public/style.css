@@ -47,19 +47,22 @@ body{
     font-family: 'Karla', sans-serif;
 }
 
-[type=radio] { 
+.care-needs-search [type=radio] { 
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-  /* IMAGE STYLES */
-  [type=radio] + svg {
+.care-needs-search [type=radio] + svg {
     cursor: pointer;
   }
   
-  /* CHECKED STYLES */
-  [type=radio]:checked + svg {
+.care-needs-search [type=radio]:checked + svg {
     fill: #FFCC00;
-  }
+}
+
+.button-center{
+    margin: 0 auto;
+}
+
