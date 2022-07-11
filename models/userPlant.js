@@ -3,10 +3,20 @@ const Plant = require('plant')
 const User = require('user')
 
 const UserPlantSchema = new Mongoose.Schema({
+  // see how to get the species / owner 
+  species: {
+    type: Mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: 'Plant'
+  },
   name: {
     type: String,
     // default to the common name of the plant it is
-    required: false,
+    required: true,
+  },
+  location: {
+    type: String,
+    required: true
   },
   wateringInterval: {
     type: String,
@@ -31,12 +41,6 @@ const UserPlantSchema = new Mongoose.Schema({
   notes: {
     type: Array,
     required: false,
-  },
-  // double check the mybrary examples to see how to get the species / owner
-  species: {
-    type: Mongoose.Schema.Types.ObjectId,
-    required: true,
-    ref: 'Plant'
   },
   owner : {
     type: Mongoose.Schema.Types.ObjectId,

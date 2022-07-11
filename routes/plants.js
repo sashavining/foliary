@@ -108,7 +108,7 @@ router.get('/quiz/result', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const plant = await Plant.findById(req.params.id).exec()
-    const plantImageTag = await createImageTag(plant.CloudinaryId, 400, 400);
+    const plantImageTag = await createImageTag(plant.CloudinaryId, 350, 350);
     const allPlants = await Plant.find();
     const similarPlants = await findSimilar(plant, allPlants);
     const similarPlantsImageTags = await Promise.all(similarPlants.map(async plant => {

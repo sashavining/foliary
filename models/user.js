@@ -15,6 +15,16 @@ const UserSchema = new Mongoose.Schema({
     default: "Basic",
     required: true,
   },
+  plants: {
+    type: Array,
+    default: [],
+    required: true,
+  },
+  locations: {
+    type: Array,
+    default: [],
+    required: true,
+  },
 })
 const User = Mongoose.model('User', UserSchema, 'users')
 module.exports = User
