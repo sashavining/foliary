@@ -1,15 +1,9 @@
 const express = require('express')
 const router = express.Router()
 const Plant = require('../models/plant')
+const { checkAuthenticated } = require('../utils/passport')
 
-// how to use this
-// function checkAuthenticated (req, res, next) {
-//     if (req.isAuthenticated()) { return next() }
-//     res.redirect("/login")
-// }
-
-// You need to protect this route - function included above
-router.get('/:id/dashboard', checkAuthenticated(), async (req, res) => {
+router.get('/:id/dashboard', checkAuthenticated, async (req, res) => {
     let plants = await Plant.find({}).exec()
     try {
         res.render('users/dashboard', { plants: plants })
