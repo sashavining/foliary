@@ -34,7 +34,14 @@ router.get("/register", (req, res) => {
         res.redirect(`users/${req.user._id}/dashboard`)
     }
 });
-router.get("/login", (req, res) => res.render("users/login"));
+router.get("/login", (req, res) => {
+    if (!req.user) {
+        res.render("users/login")
+    } else {
+        res.redirect(`users/${req.user._id}/dashboard`)
+    }
+});
+
 router.get("/admin", (req, res) => res.render("users/admin"));
 
 router.post("/register", (req, res, next) => {

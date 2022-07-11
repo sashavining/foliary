@@ -66,8 +66,6 @@ app.use(function(req, res, next) {
 app.use(express.urlencoded({ extended: false }));
 
 
-// for token storage: https://auth0.com/docs/secure/security-guidance/data-security/token-storage
-
 const indexRouter = require('./routes/index')
 const plantRouter = require('./routes/plants')
 const userRouter = require('./routes/users')
@@ -79,10 +77,6 @@ const db = mongoose.connection
 db.on('error', error => console.error(error))
 db.once('open', () => console.log('Connected to Mongoose'))
 
-// const MongoStore = require('connect-mongo')(session);
-// const connection = mongoose.createConnection(process.env.DATABASE_URL);
-// const sessionStore = new MongoStore({ mongooseConnection: connection, collection: 'sessions' })
-
 
 app.use('/', indexRouter)
 app.use('/plants', plantRouter)
@@ -90,11 +84,4 @@ app.use('/users', userRouter)
 
 
 app.listen(process.env.PORT || 8000)
-
-process.on("unhandledRejection", (err) => {
-  console.log(`An error occurred: ${err.message}`);
-  server.close(() => process.exit(1));
-});
-
-
 
