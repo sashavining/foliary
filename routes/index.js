@@ -27,17 +27,21 @@ router.get('/', async (req, res) => {
 });
 
 
-router.get("/register", (req, res) => res.render("users/register"));
+router.get("/register", (req, res) => {
+    if (!req.user) {
+        res.render("users/register")
+    } else {
+        res.redirect(`users/${req.user._id}/dashboard`)
+    }
+});
 router.get("/login", (req, res) => res.render("users/login"));
 router.get("/admin", (req, res) => res.render("users/admin"));
 
 router.post("/register", (req, res, next) => {
-    console.log(req.body.password)
     bcrypt.hash(req.body.password, 10, (err, hashedPassword) => {
         if (err) {
             console.log(err)
         } else {
-            console.log(hashedPassword)
             const user = new User({
                 username: req.body.username,
                 password: hashedPassword
