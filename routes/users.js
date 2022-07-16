@@ -14,5 +14,4 @@ router.get('/:id/dashboard', checkAuthenticated, async (req, res) => {
 })
 
 
-
 module.exports = router;

@@ -2,67 +2,35 @@
 
 
 <div class="container">
-    <i class="bi bi-plus-circle"></i> Add Plant
-    <i class="bi bi-plus-circle"></i> Add Location
-
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addPlant"><i class="bi bi-plus-circle"></i> Add Plant </button>
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addLocation"><i class="bi bi-plus-circle"></i> Add Location </button>
 </div>
-<div class="container">
-    <form class="row g-3 needs-validation" action="users/dashboard" method="POST" novalidate>
-        <!-- <fieldset> -->
-            <span class="h2 text-success text-center">Add a plant</span>
-                <div class="col-md-4">
-                    <label for="plant-name" class="form-label">Plant nickname (if applicable)</label>
-                    <input type="text" id="plant-name" class="form-control" placeholder="Plant name">
-                </div>
-        <div class="col-md-4">
-            <label for="plantSpecies" class="form-label is-valid">Plant Species</label>
-            <input class="form-control" list="plantSpeciesOptions" id="plantSpecies" placeholder="Type to search..." required>
-            <datalist id="plantSpeciesOptions">
-                <% plants.forEach((plant) => { %>
-                    <option value='<%= plant.CommonName %>'>
-                    <option value='<%= plant.BotanicalName %>'>
-                <% }) %>
-                        <!-- Need to validate this so that people can't submit nonsense -->
-            </datalist>
-        </div>
-        <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            Please provide a valid city.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div class="invalid-feedback">
-            Please select a valid state.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-            <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
-            </label>
-            <div class="invalid-feedback">
-              You must agree before submitting.
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </form>
+<!-- Button trigger modal -->
+
+<div class="modal fade" id="addPlant" tabindex="-1" aria-labelledby="addPlantLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-success" id="addPlantLabel">Add Plant</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <%- include('../partials/addPlant.ejs') %>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addLocation" tabindex="-1" aria-labelledby="addLocationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-success" id="addLocationLabel">Add Location</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <%- include('../partials/addLocation.ejs') %>
+      </div>
+    </div>
+  </div>
 </div>
