@@ -1,9 +1,8 @@
 const Mongoose = require("mongoose")
-const Plant = require('plant')
-const User = require('user')
+const Plant = require('./plant')
+const User = require('./user')
 
 const UserPlantSchema = new Mongoose.Schema({
-  // see how to get the species / owner 
   species: {
     type: Mongoose.Schema.Types.ObjectId,
     required: true,
@@ -11,7 +10,6 @@ const UserPlantSchema = new Mongoose.Schema({
   },
   name: {
     type: String,
-    // default to the common name of the plant it is
     required: true,
   },
   location: {
@@ -36,17 +34,15 @@ const UserPlantSchema = new Mongoose.Schema({
   },
   images: {
     type: Array,
-    required: false,
-  },
-  notes: {
-    type: Array,
-    required: false,
+    required: true,
+    default: []
   },
   owner : {
     type: Mongoose.Schema.Types.ObjectId,
     required: true,
-    ref: 'User'
+    ref: 'users'
   }
 })
+
 const UserPlant = Mongoose.model('UserPlant', UserPlantSchema, 'user-plants')
 module.exports = UserPlant

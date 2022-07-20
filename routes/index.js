@@ -62,6 +62,8 @@ router.post("/register", (req, res, next) => {
     }) 
 });
 
+// Add some error message if you fail to login
+
 router.post(
     "/login",
     passport.authenticate("local", {

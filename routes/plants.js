@@ -67,6 +67,7 @@ router.get('/quiz', async (req, res) => {
     res.redirect('/')
   }
 })
+
 // light and humidity can each have 2 values
 //Plant Quiz Result
 router.get('/quiz/result', async (req, res) => { 
@@ -124,26 +125,6 @@ router.get('/:id', async (req, res) => {
 })
 
 
-router.post('/', upload.single('image'), async(req, res) => {
-  try {
-    const result = await cloudinary.uploader.upload(req.file.path);
-/* CREATES A NEW PLANT:
-
-    let plant = new Plant({
-      name: req.body.name,
-      image: result.secure_url,
-      cloudinary_id: result.public_id
-    })
-
-    await plant.save()
-
-*/
-    res.json(result);
-  } catch (err) {
-    console.log(err);
-  }
-})
-// input type=file name=image on the front end to end it here
 
 router.get('/', async (req, res) => {
   try{

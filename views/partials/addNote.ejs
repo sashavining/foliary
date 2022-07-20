@@ -1,0 +1,11 @@
+<form class="row g-3 needs-validation" action="/users/plants/<%= plant._id %>/notes" method="POST" novalidate>
+    <label for="date-written">Date written (if not today)</label>
+    <input type="date" class="form-control" id="date-written" name="date">
+    <div class="col-md-12 mb-3">
+        <label for="note-body">Note text:</label>
+        <textarea class="form-control" id="note-body" rows="5" name="body" required></textarea>
+    </div>
+
+    <button class="btn btn-success" type="submit">Add Note</button>
+</div>
+</form>

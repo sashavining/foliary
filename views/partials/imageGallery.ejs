@@ -1,0 +1,15 @@
+
+  <div class="text-center pb-5">
+      <div class="container">
+        <div class="row my-2">
+          <% plantImageTags.forEach((image, index) => { %>
+            <div class="col my-4">
+                  <%- image.imageTag %> 
+                  <div class="mt-2"><%= new Date(image.uploaded).toUTCString().split(" ").slice(0, 4).join(" ") %></div>
+           </div>
+          <% }) %>
+        </div>
+      </div>
+</div>
+  
+  

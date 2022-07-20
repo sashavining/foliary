@@ -1,27 +1,25 @@
-<form class="row g-3 needs-validation" action="users/plants" method="POST" novalidate>
-    <!-- <fieldset> -->
+<form class="row g-3 needs-validation" action="/users/<%= currentUser._id %>/plants" method="POST" novalidate>
             <div class="col-md-6">
                 <label for="plant-name" class="form-label">Plant nickname (if it has one)</label>
-                <input type="text" id="plant-name" class="form-control" placeholder="Plant name">
+                <input type="text" id="plant-name" class="form-control" placeholder="Plant name" name="name">
             </div>
     <div class="col-md-6 mb-2">
         <label for="plantSpecies" class="form-label is-valid">Plant Species</label>
-        <input class="form-control" list="plantSpeciesOptions" id="plantSpecies" placeholder="Type to search..." required>
-        <datalist id="plantSpeciesOptions">
-            <% plants.forEach((plant) => { %>
-                <option value='<%= plant.CommonName %>'>
-                <option value='<%= plant.BotanicalName %>'>
-            <% }) %>
-            <!-- Need to validate this so that people can't submit nonsense -->
-        </datalist>
+        <select id="plantSpecies" class="form-select" name="species">
+          <option selected disabled>Select a plant species</option>
+          <% alphabetizedPlantNames.forEach((plantName) => { %>
+            <% const plant = plants.find(plant => plant.CommonName == plantName || plant.BotanicalName == plantName) %>
+            <option value="<%= plant._id %>"><%= plantName %></option>
+          <% }) %>
+        </select>
     </div>
     <div class="col-md-6 mb-2">
       <label for="location" class="form-label">Location</label>
-      <select class="form-select" id="location" required>
-        <option selected value="">Choose a location</option>
+      <select class="form-select" id="location" name="location" required>
+        <option selected disabled>Choose a location</option>
         <% if (currentUser.locations.length > 0) { %>
           <% currentUser.locations.forEach(location => {%>
-            <option selected value="<%= location %>"><%= location %></option>
+            <option value="<%= location %>" name="location"><%= location %></option>
           <% }) %>
         <% } else { %>
           <option disabled value="">Enter a location on the menu above to get started!</option>
@@ -31,29 +29,26 @@
     </div>
     <div class="col-md-6">
       <label for="wateringFrequency" class="form-label">Watering frequency (in days)?</label>
-      <input type="number" class="form-control" id="wateringFrequency" true>
+      <input type="number" class="form-control" id="wateringFrequency" name="wateringInterval" true>
     </div>
    
-    <div class="col-md-12">
-      <label for="recentPhoto" class="form-label">Recent Photo</label>
-      <input type="file" class="form-control" id="recentPhoto">
-    </div>
     
     <div class="col-md-6">
       <label for="lastWatered" class="form-label">Last watered:</label>
-      <input type="date" class="form-control" id="lastWatered">
+      <input type="date" class="form-control" id="lastWatered" name="lastWatered">
     </div>
 
     <div class="col-md-6">
       <label for="lastFertilized" class="form-label">Last fertilized:</label>
-      <input type="date" class="form-control" id="lastFertilized">
+      <input type="date" class="form-control" id="lastFertilized" name="lastFertilized">
     </div>
 
     <div class="col-md-12 mb-3">
       <label for="lastRepotted" class="form-label">Last repotted:</label>
-      <input type="date" class="form-control" id="lastRepotted">
+      <input type="date" class="form-control" id="lastRepotted" name="lastRepotted">
     </div>
 
     <button class="btn btn-success" type="submit">Submit form</button>
 </div>
 </form>
+

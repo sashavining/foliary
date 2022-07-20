@@ -78,8 +78,9 @@
   <div class="row">
     <% plants.forEach((plant, index) => { %>
       <div class="col-md mb-5 plant-card">    
-        <a href="plants/<%= plant._id %>">
+        <a href="plants/<%= plant._id %>" class="link-success">
         <%- plantsImageTags[index] %>
+        <div class=" mt-2 text-center"><%= plant.CommonName %></div>
         </a>
       </div>
     <% }) %>

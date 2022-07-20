@@ -10,6 +10,7 @@
     }
 }
 
+
 .navbar a:focus, a.dropdown-item:active{
     background-color: #28a745 !important;
 }
@@ -65,4 +66,3 @@ body{
 .button-center{
     margin: 0 auto;
 }
-

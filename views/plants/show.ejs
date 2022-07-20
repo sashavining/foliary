@@ -39,8 +39,9 @@
     <div class="row">
       <% similarPlants.forEach((plant, index) => { %>
           <div class="col pt-4">
-            <a href="/plants/<%= plant._id %>">
+            <a href="/plants/<%= plant._id %>" class="link-success">
             <%- similarPlantsImageTags[index] %>
+            <div class="link-success mt-2"><%= plant.CommonName %></div>
           </a>
           </div>
       <% }) %>
