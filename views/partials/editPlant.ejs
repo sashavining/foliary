@@ -9,7 +9,9 @@
         <option selected disabled value="<%= plant.location %>"><%= plant.location %></option>
         <% if (currentUser.locations.length > 0) { %>
           <% currentUser.locations.forEach(location => {%>
+            <% if (location !== "No location assigned") { %> 
             <option value="<%= location %>" name="location"><%= location %></option>
+            <% } %>
           <% }) %>
         <% } else { %>
           <option disabled value="">Enter a location on the menu above to get started!</option>

@@ -10,9 +10,7 @@ const upload = require('../utils/multer')
 /**************************************
 TO DOS:
 
-1. Add buttons to water / fertilize / repot plants (on the edit page and on the dashboard)
-2. UserPlant edit route 
-3. Location edit / delete routes
+1. Location edit / delete routes
 
 ***************************************/
 
@@ -41,7 +39,7 @@ router.get('/:id/dashboard', checkAuthenticated, async (req, res) => {
     })
     alphabetizedPlantNames.sort();
     try {
-        res.render(`users/dashboard`, { plants: plants, locations: user.locations, userPlants: userPlants, alphabetizedPlantNames: alphabetizedPlantNames, userPlantsImageTags: userPlantsImageTags })
+        res.render(`users/dashboard`, { plants: plants, locations: user.locations.reverse(), userPlants: userPlants, alphabetizedPlantNames: alphabetizedPlantNames, userPlantsImageTags: userPlantsImageTags })
     } catch (err) {
        console.log(err)
        res.redirect('users/login') 
@@ -64,6 +62,68 @@ router.post('/:id/locations', checkAuthenticated, async (req, res) => {
         res.redirect(`/users/${req.params.id}/dashboard/`)
     }
 })
+
+// Delete a location
+router.delete('/:id/locations', checkAuthenticated, async (req, res) => {
+    try {
+        User.findOneAndUpdate(
+            { "_id": `${req.params.id}` }, 
+            { $pull: { locations: req.body.location }}, 
+            function (err, data) { 
+                if (err) {
+                    console.log(err)
+                }
+        }) 
+        UserPlant.updateMany(
+            { "location" : req.body.location },
+            { $set: { "location" : "No location assigned" }},
+            function (err, data) {
+                if (err) {
+                    console.log(err)
+                }
+            }
+        )
+        res.redirect(`/users/${req.params.id}/dashboard`)
+    } catch (err) {
+        console.log(err)
+        res.redirect(`/users/${req.params.id}/dashboard/`)
+    }
+})
+
+// Edit a location
+router.put('/:id/locations', checkAuthenticated, async (req, res) => {
+    try {
+        console.log('attempting to update location!', req.body.location, req.body.newLocation)
+        User.findOneAndUpdate(
+            { 
+                "_id": `${req.params.id}`,
+                "locations": req.body.location
+            }, 
+            {
+                $set: { 'locations.$': req.body.newLocation}
+            },
+            function (err, data) { 
+                if (err) {
+                    console.log(err)
+                }
+        }) 
+        UserPlant.updateMany(
+            { "location" : req.body.location },
+            { $set: { "location" : req.body.newLocation }},
+            function (err, data) {
+                if (err) {
+                    console.log(err)
+                }
+            }
+        )
+        res.redirect(`/users/${req.params.id}/dashboard`)
+    } catch (err) {
+        console.log(err)
+        res.redirect(`/users/${req.params.id}/dashboard/`)
+    }
+})
+
+
 
 // Add a new note associated with a given plant
 router.post('/plants/:id/notes', checkAuthenticated, async (req, res) => {
@@ -299,7 +359,44 @@ router.put('/plants/:id/images/', checkAuthenticated, async (req, res) => {
     res.redirect(303, `/users/plants/${req.body.plantId}`)     
 })
 
+// Water route:
+router.put('/plants/:id/water', checkAuthenticated, async (req, res) => {
+    const userId = req.body.userId
+    try {
+        UserPlant.findOneAndUpdate(
+            { "_id": `${req.params.id}`} , 
+            { 
+                lastWatered: new Date(Date.now())
+            }, 
+            { upsert: false }, 
+            function (err, data) { 
+                console.log(err)
+        })
+        res.redirect(303, `/users/${userId}/dashboard/`)        
+    } catch (err) {
+        console.log(err)
+        res.redirect(303, `/users/${userId}/dashboard/`)        
+    }
+})
 
+router.put('/plants/:id/fertilize', checkAuthenticated, async (req, res) => {
+    const userId = req.body.userId
+    try {
+        UserPlant.findOneAndUpdate(
+            { "_id": `${req.params.id}`} , 
+            { 
+                lastFertilized: new Date(Date.now())
+            }, 
+            { upsert: false }, 
+            function (err, data) { 
+                console.log(err)
+        })
+        res.redirect(303, `/users/${userId}/dashboard/`)        
+    } catch (err) {
+        console.log(err)
+        res.redirect(303, `/users/${userId}/dashboard/`)        
+    }
+})
     
 async function createImageTag (publicId, width, height) {
     // Create an image tag with transformations applied to the src URL

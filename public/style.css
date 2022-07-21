@@ -66,3 +66,19 @@ body{
 .button-center{
     margin: 0 auto;
 }
+
+
+@media screen and (min-width: 650px) {
+    .mobile-visible{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mobile-hidden {
+        display:none;
+    }
+    .mobile-visible {
+        display: inline-block;
+    }
+}

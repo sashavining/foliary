@@ -16,7 +16,6 @@ const editPlantModalOpenButton = document.querySelector('#edit-plant-modal-open-
 const editPlantButton = document.querySelector('#edit-plant')
 
 
-
 // Delete a note
 Array.from(noteDeleteButtons).forEach((button) => {
   button.addEventListener('click', function (e) {
@@ -102,12 +101,12 @@ editPlantModalOpenButton.addEventListener('click', function () {
   editPlantButton.addEventListener('click', function(e) {
     // Collects form inputs. If the user did not input a value for one of the forms, it falls back to the existing values.
     const nickname = document.querySelector('#edited-plant-name').value || document.querySelector('#nickname').textContent
-    const location = document.querySelector('#edited-location').value || document.querySelector('#location').textContent
+    const location = document.querySelector('#edited-location').value 
     const wateringInterval = document.querySelector('#edited-watering-interval').value || document.querySelector('#wateringInterval').textContent
     const lastWatered = document.querySelector('#edited-last-watered').value || document.querySelector('#lastWatered').textContent
     const lastFertilized = document.querySelector('#edited-last-fertilized').value || document.querySelector('#lastFertilized').textContent
     const lastRepotted = document.querySelector('#edited-last-repotted').value || document.querySelector('#lastRepotted').textContent 
-    
+
     e.preventDefault()
 
     fetch(`/users/plants/${plantId}`, {
@@ -205,3 +204,4 @@ Array.from(editImageModalOpenButtons).forEach((button) => {
     })  
   })
 })
+

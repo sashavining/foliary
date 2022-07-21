@@ -18,7 +18,7 @@ const UserSchema = new Mongoose.Schema({
   },
   locations: {
     type: Array,
-    default: [],
+    default: ["No location assigned"],
     required: true,
   },
 })
