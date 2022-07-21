@@ -12,6 +12,9 @@ const deleteImageModalOpenButtons = document.querySelectorAll('#deleteImageModal
 const deleteImageButton = document.querySelector('#deleteImage')
 const editImageModalOpenButtons = document.querySelectorAll('#editImageModalOpenButton')
 const editImageButton = document.querySelector('#edit-image')
+const editPlantModalOpenButton = document.querySelector('#edit-plant-modal-open-button')
+const editPlantButton = document.querySelector('#edit-plant')
+
 
 
 // Delete a note
@@ -81,6 +84,43 @@ deletePlantModalOpenButton.addEventListener('click', function () {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
         userId: userId
+      })
+    }).then(response => {
+      window.location = response.url    
+    })
+      .catch(err => {
+        console.log(err)
+    })
+  })
+})
+
+// Edit a user's plant
+editPlantModalOpenButton.addEventListener('click', function () {    
+  const plantId = mainSection.dataset.plantid
+  const userId = mainSection.dataset.userid
+
+  editPlantButton.addEventListener('click', function(e) {
+    // Collects form inputs. If the user did not input a value for one of the forms, it falls back to the existing values.
+    const nickname = document.querySelector('#edited-plant-name').value || document.querySelector('#nickname').textContent
+    const location = document.querySelector('#edited-location').value || document.querySelector('#location').textContent
+    const wateringInterval = document.querySelector('#edited-watering-interval').value || document.querySelector('#wateringInterval').textContent
+    const lastWatered = document.querySelector('#edited-last-watered').value || document.querySelector('#lastWatered').textContent
+    const lastFertilized = document.querySelector('#edited-last-fertilized').value || document.querySelector('#lastFertilized').textContent
+    const lastRepotted = document.querySelector('#edited-last-repotted').value || document.querySelector('#lastRepotted').textContent 
+    
+    e.preventDefault()
+
+    fetch(`/users/plants/${plantId}`, {
+      method: 'PUT',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        userId: userId,
+        nickname: nickname,
+        location: location,
+        wateringInterval: wateringInterval,
+        lastWatered: lastWatered,
+        lastFertilized: lastFertilized,
+        lastRepotted: lastRepotted
       })
     }).then(response => {
       window.location = response.url    

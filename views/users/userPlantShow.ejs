@@ -1,4 +1,4 @@
-<h1 class="text-success text-center mt-5"><%= plant.name %></h1>
+<h1 class="text-success text-center mt-5" id="nickname"><%= plant.name %></h1>
 <div class="h2 text-center text-secondary mb-4 border-bottom pb-5"><%= plant.species.BotanicalName %></div>
 
 <section class="p-2 my-5 pt-5 text-center text-md-start" data-plantid="<%= plant._id %>" data-userid="<%= currentUser._id %>" id="main-section">
@@ -9,27 +9,28 @@
         <h2 class="border-bottom text-success pr-3 pb-2 pt-4 pt-md-0">Plant Detail</h2>
         <div>
           <span class="h4 mx-4 mt-3">Location:</span>
-          <span><%= plant.location %></span>
+          <span id="location"><%= plant.location %></span>
         </div>
         <div>
           <span class="h4 mx-4 mt-1">Watering Interval:</span>
-          <span><%= plant.wateringInterval %></span>  
+          <span id="wateringInterval"><%= plant.wateringInterval %></span>  
         </div>
         <div>
           <span class="h4 mx-4 mt-1">Last Watered:</span>
-          <span><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+          <span id="lastWatered"><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
         </div>
         <div>
           <span class="h4 mx-4 mt-1">Last Fertilized:</span>
-          <span><%= new Date(plant.lastFertilized).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+          <span id="lastFertilized"><%= new Date(plant.lastFertilized).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
         </div>
         <div>
             <span class="h4 mx-4 mt-1">Last Repotted:</span>
-            <span><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+            <span id="lastRepotted"><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
           </div>
         <div class="text-center mt-4">
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addImage" id="add-image-modal-open-button"><i class="bi bi-plus-circle"></i> Add Photo </button>
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addNote"><i class="bi bi-plus-circle"></i> Add Note </button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editPlant" id="edit-plant-modal-open-button"><i class="bi bi-pencil-square"></i> Edit Plant </button>
           <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#deletePlant" id="delete-plant-modal-open-button"><i class="bi bi-trash"></i> Delete Plant </button>
         </div>
       </div>
@@ -128,6 +129,21 @@
       </div>
       <div class="modal-body">
         <%- include('../partials/addImage.ejs') %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="editPlant" tabindex="-1" aria-labelledby="editPlantLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="modal-title text-success h3" id="editPlantLabel">Edit Plant</span>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <%- include('../partials/editPlant.ejs') %>
       </div>
     </div>
   </div>

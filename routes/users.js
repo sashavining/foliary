@@ -209,26 +209,29 @@ router.delete('/plants/:id', checkAuthenticated, async (req, res) => {
 // Edit a user plant route
 router.put('/plants/:id', checkAuthenticated, async (req, res) => {
     const userId = req.body.userId
-    const plant = await UserPlant.findById(req.params.id)
-    const images = plant.images.map(x => x.cloudinaryId)
+    const nickname = req.body.nickname
+    const location = req.body.location
+    const wateringInterval = req.body.wateringInterval
+    const lastWatered = req.body.lastWatered
+    const lastFertilized = req.body.lastFertilized
+    const lastRepotted = req.body.lastRepotted
+    console.log(userId, nickname, location, wateringInterval, lastWatered, lastFertilized, lastRepotted)
+
     try {
-        for (const image of images) {
-            cloudinary.uploader.destroy(image, function(result) { console.log(result) });
-        }
-        UserPlant.findOneAndDelete(
-            { _id: `${req.params.id}`} , 
-            function (err, data) {
-                if (err) {
-                    console.log(err)
-                } 
+        UserPlant.findOneAndUpdate(
+            { "_id": `${req.params.id}`} , 
+            { 
+                name: nickname, 
+                location: location,
+                wateringInterval: wateringInterval,
+                lastWatered: lastWatered,
+                lastFertilized: lastFertilized,
+                lastRepotted: lastRepotted
+            }, 
+            { upsert: false }, 
+            function (err, data) { 
+                console.log(err)
         })
-        Note.deleteMany(
-            { plant: req.params.id }, 
-             function (err) {
-                if (err) {
-                    console.log(err)  
-                }
-            });
 
       } catch (err) {
         if (err) {
