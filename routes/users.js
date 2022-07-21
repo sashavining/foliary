@@ -10,11 +10,9 @@ const upload = require('../utils/multer')
 /**************************************
 TO DOS:
 
-1. When you delete a plant, delete all its images from Cloudinary
-2. Make a delete image route and implement it with a trash can under each image
-3. Add buttons to water / fertilize / repot plants (on the edit page and on the dashboard)
-4. UserPlant edit route 
-5. Location edit / delete routes
+1. Add buttons to water / fertilize / repot plants (on the edit page and on the dashboard)
+2. UserPlant edit route 
+3. Location edit / delete routes
 
 ***************************************/
 
@@ -127,8 +125,6 @@ router.delete('/plants/notes/:id', checkAuthenticated, async (req, res) => {
     }
 })
 
-
-
 // Add a new plant route
 router.post('/:id/plants', checkAuthenticated, async (req, res) => {
     try {
@@ -158,21 +154,19 @@ router.post('/:id/plants', checkAuthenticated, async (req, res) => {
 // Load plant detail page route
 router.get('/plants/:id', checkAuthenticated, async (req, res) => {
     try {
-
         const plant = await UserPlant.findById(req.params.id).populate('species').exec()
         const notes = await Note.find({ plant: req.params.id })
-        notes.sort((a, b) => a.date - b.date)
+        notes.sort((a, b) => b.date - a.date)
         const plantImageTags = []
         if (plant.images.length > 0) {
             for await (const image of plant.images) {
                 const imageTag = await createImageTag(image.cloudinaryId, 350, 350);
-                plantImageTags.push({ imageTag: imageTag, uploaded: image.uploaded })
+                plantImageTags.push({ cloudinaryId: image.cloudinaryId, imageTag: imageTag, uploaded: image.uploaded })
             }
         } else {
             const imageTag = await createImageTag(plant.species.CloudinaryId, 350, 350);
             plantImageTags.push({ imageTag: imageTag, uploaded: new Date(Date.now()) })
         }
-        console.log(plantImageTags)
         res.render('users/userPlantShow', { plant: plant, plantImageTags: plantImageTags, notes: notes })
       } catch (err) {
         console.log(err)
@@ -183,7 +177,12 @@ router.get('/plants/:id', checkAuthenticated, async (req, res) => {
 //Delete a user generated plant route
 router.delete('/plants/:id', checkAuthenticated, async (req, res) => {
     const userId = req.body.userId
+    const plant = await UserPlant.findById(req.params.id)
+    const images = plant.images.map(x => x.cloudinaryId)
     try {
+        for (const image of images) {
+            cloudinary.uploader.destroy(image, function(result) { console.log(result) });
+        }
         UserPlant.findOneAndDelete(
             { _id: `${req.params.id}`} , 
             function (err, data) {
@@ -198,6 +197,7 @@ router.delete('/plants/:id', checkAuthenticated, async (req, res) => {
                     console.log(err)  
                 }
             });
+
       } catch (err) {
         if (err) {
             res.redirect(303, `/users/${userId}/dashboard/`)        
@@ -206,6 +206,39 @@ router.delete('/plants/:id', checkAuthenticated, async (req, res) => {
       res.redirect(303, `/users/${userId}/dashboard/`)
 })
 
+// Edit a user plant route
+router.put('/plants/:id', checkAuthenticated, async (req, res) => {
+    const userId = req.body.userId
+    const plant = await UserPlant.findById(req.params.id)
+    const images = plant.images.map(x => x.cloudinaryId)
+    try {
+        for (const image of images) {
+            cloudinary.uploader.destroy(image, function(result) { console.log(result) });
+        }
+        UserPlant.findOneAndDelete(
+            { _id: `${req.params.id}`} , 
+            function (err, data) {
+                if (err) {
+                    console.log(err)
+                } 
+        })
+        Note.deleteMany(
+            { plant: req.params.id }, 
+             function (err) {
+                if (err) {
+                    console.log(err)  
+                }
+            });
+
+      } catch (err) {
+        if (err) {
+            res.redirect(303, `/users/${userId}/dashboard/`)        
+        }
+      }
+      res.redirect(303, `/users/${userId}/dashboard/`)
+})
+
+//Upload an image route
 router.post('/plants/:id/images', upload.single('image'), async(req, res) => {
     try {
       const result = await cloudinary.uploader.upload(req.file.path, {folder: 'user-uploaded-houseplants'})
@@ -222,6 +255,49 @@ router.post('/plants/:id/images', upload.single('image'), async(req, res) => {
     res.redirect(303, `/users/plants/${req.params.id}`)
   })
 
+// Delete image route
+
+router.delete('/plants/:id/images/', checkAuthenticated, async (req, res) => {
+    try {
+        await cloudinary.uploader.destroy(req.body.cloudinaryId, function(result) { console.log(result) });
+        UserPlant.findOneAndUpdate(
+            { "_id": `${req.params.id}` }, 
+            { $pull: { images: { 'cloudinaryId': req.body.cloudinaryId } }}, 
+            function (err, data) { 
+                if (err) {
+                    console.log(err)
+                }
+        }) 
+    } catch (err) {
+        console.log(err)
+        res.redirect(303, `/users/plants/${req.body.plantId}`)     
+    }
+    res.redirect(303, `/users/plants/${req.body.plantId}`)     
+})
+
+// Edit image route
+
+router.put('/plants/:id/images/', checkAuthenticated, async (req, res) => {
+    try {
+        console.log('attempting to update!', req.params.id, req.body.cloudinaryId)
+        UserPlant.findOneAndUpdate(
+            { '_id': `${req.params.id}`,
+              'images.cloudinaryId' : req.body.cloudinaryId }, 
+            { $set: { 'images.$.uploaded': req.body.uploaded }}, 
+            function (err, data) { 
+                if (err) {
+                    console.log(err)
+                }
+        }) 
+    } catch (err) {
+        console.log(err)
+        res.redirect(303, `/users/plants/${req.body.plantId}`)     
+    }
+    res.redirect(303, `/users/plants/${req.body.plantId}`)     
+})
+
+
+    
 async function createImageTag (publicId, width, height) {
     // Create an image tag with transformations applied to the src URL
     let imageTag = cloudinary.image(publicId, {
@@ -232,5 +308,6 @@ async function createImageTag (publicId, width, height) {
       });
       return imageTag
 };
+
 
 module.exports = router;

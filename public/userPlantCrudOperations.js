@@ -8,6 +8,11 @@ const deletePlantButton = document.querySelector('#submit-delete-plant-button')
 const addImageModalOpenButton = document.querySelector('#add-image-modal-open-button')
 const addImageButton = document.querySelector('#add-image')
 const imageInput = document.querySelector('#uploadImage')
+const deleteImageModalOpenButtons = document.querySelectorAll('#deleteImageModalOpenButton')
+const deleteImageButton = document.querySelector('#deleteImage')
+const editImageModalOpenButtons = document.querySelectorAll('#editImageModalOpenButton')
+const editImageButton = document.querySelector('#edit-image')
+
 
 // Delete a note
 Array.from(noteDeleteButtons).forEach((button) => {
@@ -68,7 +73,6 @@ Array.from(noteEditButtons).forEach((button) => {
 deletePlantModalOpenButton.addEventListener('click', function () {    
   let plantId = mainSection.dataset.plantid
   const userId = mainSection.dataset.userid
-  console.log(userId)
 
   deletePlantButton.addEventListener('click', function(e) {
     e.preventDefault()
@@ -87,6 +91,7 @@ deletePlantModalOpenButton.addEventListener('click', function () {
   })
 })
 
+// Add image fetch request
 addImageModalOpenButton.addEventListener('click', function () {  
   let plantId = mainSection.dataset.plantid
   
@@ -100,5 +105,63 @@ addImageModalOpenButton.addEventListener('click', function () {
     }).then( response => window.location = response.url   
     ).catch( error => console.log(error) // Handle the error response object
     );
+  })
+})
+
+// Delete image fetch request
+Array.from(deleteImageModalOpenButtons).forEach((button) => {
+  button.addEventListener('click', function (e) {  
+    let cloudinaryId = e.target.parentElement.dataset.cloudinaryid
+    let plantId = mainSection.dataset.plantid
+    deleteImageButton.addEventListener('click', function(e) {
+      e.preventDefault()
+      fetch(`/users/plants/${plantId}/images/`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'plantId': plantId,
+          'cloudinaryId': cloudinaryId
+        })
+      })
+        .then(function (response) {
+          console.log(response)
+          window.location = response.url    
+        })
+        .catch(err => {
+          console.log(err)
+      })
+    })  
+  })
+})
+
+// Update image fetch request
+Array.from(editImageModalOpenButtons).forEach((button) => {
+  button.addEventListener('click', function (e) {  
+    let cloudinaryId = e.target.parentElement.dataset.cloudinaryid
+    let plantId = mainSection.dataset.plantid
+    editImageButton.addEventListener('click', function(e) {
+      let date = document.querySelector('#editImageDate').value
+      e.preventDefault()
+      fetch(`/users/plants/${plantId}/images/`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          'plantId': plantId,
+          'cloudinaryId': cloudinaryId,
+          'uploaded': date
+        })
+      })
+        .then(function (response) {
+          console.log(response)
+          window.location = response.url    
+        })
+        .catch(err => {
+          console.log(err)
+      })
+    })  
   })
 })
