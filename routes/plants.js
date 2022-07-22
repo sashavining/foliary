@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const Plant = require('../models/plant.js')
 const upload = require('../utils/multer')
-const cloudinary = require('../utils/cloudinary')
+const cloudinary = require('../utils/cloudinaryConfig')
 
 
 router.get('/search', async (req, res) => {

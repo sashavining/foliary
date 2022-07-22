@@ -4,7 +4,7 @@ const Plant = require('../models/plant')
 const User = require('../models/user')
 const UserPlant = require('../models/userPlant')
 const Note = require('../models/note')
-const cloudinary = require('../utils/cloudinary')
+const cloudinary = require('../utils/cloudinaryConfig')
 const upload = require('../utils/multer')
 
 /**************************************
@@ -190,7 +190,7 @@ router.post('/:id/plants', checkAuthenticated, async (req, res) => {
     try {
         const plant = new UserPlant({
             location: req.body.location,
-            species: req.body.species, // the type is Mongoose.Schema.Types.ObjectId. How to get this to work?
+            species: req.body.species, 
             name: req.body.name,
             wateringInterval: req.body.wateringInterval,
             lastWatered: new Date(req.body.lastWatered),
@@ -298,7 +298,7 @@ router.put('/plants/:id', checkAuthenticated, async (req, res) => {
             res.redirect(303, `/users/${userId}/dashboard/`)        
         }
       }
-      res.redirect(303, `/users/${userId}/dashboard/`)
+      res.redirect(303, `/users/plants/${req.params.id}`)
 })
 
 //Upload an image route

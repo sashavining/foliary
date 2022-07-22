@@ -1,31 +1,26 @@
 const express = require('express')
 const router = express.Router()
 const Plant = require('../models/plant')
-const cloudinary = require('../utils/cloudinary')
+const { createManyImageTags } = require('../utils/cloudinaryFunctions')
 const User = require('../models/user')
 const passport = require('passport')
 const bcrypt = require('bcryptjs')
 
 router.get('/', async (req, res) => {
-    let plants;
-    let plantsImageTags;
     try {
-        plants = await Plant.aggregate([
+        const plants = await Plant.aggregate([
             {$sample: {size: 4}}
         ], function (err, docs) {
             return docs
         })
-        plantsImageTags = await Promise.all(plants.map(async plant => {
-            const imageTag = await createImageTag(plant.CloudinaryId);
-            return imageTag;
-        }))
-    } catch {
-        console.log("oops! error")
-        plants = []
-    }
-    res.render('index', { plants: plants, plantsImageTags: plantsImageTags })
-});
+        const plantsImageTags = await createManyImageTags(plants)
 
+        res.render('index', { plants: plants, plantsImageTags: plantsImageTags })
+    } catch (err) {
+        console.log(err)
+        res.render('index', { plants: [], plantsImageTags: [] })
+    }
+});
 
 router.get("/register", (req, res) => {
     if (!req.user) {
@@ -34,6 +29,7 @@ router.get("/register", (req, res) => {
         res.redirect(`users/${req.user._id}/dashboard`)
     }
 });
+
 router.get("/login", (req, res) => {
     if (!req.user) {
         res.render("users/login")
@@ -62,7 +58,11 @@ router.post("/register", (req, res, next) => {
     }) 
 });
 
-// Add some error message if you fail to login
+/* 
+To-do:
+1. Error message for login 
+2. Redirect to user dashboard on successful login
+*/
 
 router.post(
     "/login",
@@ -81,15 +81,6 @@ router.get("/logout", (req, res) => {
     });
   });
 
-async function createImageTag (publicId) {
-    // Create an image tag with transformations routerlied to the src URL
-    let imageTag = cloudinary.image(publicId, {
-        transformation: [
-          { width: 300, height: 300, crop: 'thumb' },
-          { radius: 50 } // check this out for more options: https://cloudinary.com/documentation/node_quickstart
-        ],
-      });
-      return imageTag
-  };
+
 
 module.exports = router;
