@@ -108,6 +108,33 @@ const deleteLocationButton = document.querySelector("#delete-location")
           })      
     })
     })
-
   })
-  
+  // Set maximum date of form date picker to today
+  const datePickers = document.querySelectorAll('.date-picker')
+  datePickers.forEach(datePicker => datePicker.max = new Date().toLocaleDateString('en-ca'))
+
+  // const addPlantForm = document.querySelector('.add-plant-form')
+
+  // // Form validation for add plant form
+  // addPlantForm.addEventListener('submit', (e) => {
+  //   for (element of 
+  //     [
+  //     document.querySelector('#plantspecies'),
+  //     document.querySelector('#location'),
+  //     document.querySelector('#wateringFrequency'),
+  //     document.querySelector('#lastWatered'),
+  //     document.querySelector('#lastFertilized'),
+  //     document.querySelector('#lastRepotted')
+  //     ]) 
+  //   {
+  //     console.log('checking if valid!')
+  //     addErrorIfInvalid (element)
+  //   }
+
+  //   function addErrorIfInvalid (element) {
+  //     if (!element.validity.valid) {
+  //       element.classList.add('error')
+  //       e.preventDefault()
+  //     }
+  //   }
+  // })

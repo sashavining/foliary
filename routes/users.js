@@ -7,13 +7,6 @@ const Note = require('../models/note')
 const cloudinary = require('../utils/cloudinaryConfig')
 const upload = require('../utils/multer')
 
-/**************************************
-TO DOS:
-
-1. Location edit / delete routes
-
-***************************************/
-
 
 const { checkAuthenticated } = require('../utils/passport')
 
@@ -191,7 +184,7 @@ router.post('/:id/plants', checkAuthenticated, async (req, res) => {
         const plant = new UserPlant({
             location: req.body.location,
             species: req.body.species, 
-            name: req.body.name,
+            name: req.body.name || "Anonymous",
             wateringInterval: req.body.wateringInterval,
             lastWatered: new Date(req.body.lastWatered),
             lastFertilized: new Date(req.body.lastFertilized),
