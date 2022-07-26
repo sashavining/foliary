@@ -74,6 +74,11 @@ body{
 	right: 20px;
 }
 
+#register-form .form-control-custom i {
+	top: 15px;
+	right: 20px;
+}
+
 .form-control-custom.success input, .form-control-custom.success select {
 	border-color: #2ecc71;
 } 
@@ -84,6 +89,9 @@ body{
         color: red;
         position: absolute;
         top: -5px;
+}
+.form-floating>.required::after {
+    top: 5px;
 }
 
 .form-control-custom.error input, .form-control-custom.error select {
@@ -112,6 +120,10 @@ body{
 	bottom: -10;
 	left: -10;
 	visibility: hidden;
+}
+#register-form .form-control-custom small {
+    bottom: -30px;
+    left: 0px;
 }
 
 .form-control-custom.error small {
