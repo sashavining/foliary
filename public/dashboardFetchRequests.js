@@ -1,11 +1,6 @@
 const mainSection = document.querySelector('#main-section')
-const waterPlantButtons = document.querySelectorAll('#water-plant')
-const fertilizePlantButtons = document.querySelectorAll('#fertilize-plant')
-const deleteLocationModalOpenButtons = document.querySelectorAll('#deleteLocationModalOpenButton')
-const deleteLocationButton = document.querySelector("#delete-location")
-const editLocationModalOpenButtons = document.querySelectorAll('#editLocationModalOpenButton')
-const editLocationButton = document.querySelector("#edit-location")
 
+const waterPlantButtons = document.querySelectorAll('#water-plant')
 
 // Water plant fetch request
 Array.from(waterPlantButtons).forEach((button) => {
@@ -31,6 +26,8 @@ Array.from(waterPlantButtons).forEach((button) => {
     })
   })
 
+const fertilizePlantButtons = document.querySelectorAll('#fertilize-plant')
+
 // Fertilize plant fetch request
 Array.from(fertilizePlantButtons).forEach((button) => {
     button.addEventListener('click', function (e) {    
@@ -54,6 +51,9 @@ Array.from(fertilizePlantButtons).forEach((button) => {
     })
     })
   })
+
+const deleteLocationModalOpenButtons = document.querySelectorAll('#deleteLocationModalOpenButton')
+const deleteLocationButton = document.querySelector("#delete-location")
 
 //   Delete location fetch request
   Array.from(deleteLocationModalOpenButtons).forEach((button) => {
@@ -80,7 +80,9 @@ Array.from(fertilizePlantButtons).forEach((button) => {
     })
     })
   })
-
+  const editLocationModalOpenButtons = document.querySelectorAll('#editLocationModalOpenButton')
+  const editLocationButton = document.querySelector("#edit-location")
+  
   //   Edit location fetch request
   Array.from(editLocationModalOpenButtons).forEach((button) => {
     button.addEventListener('click', function (e) {    
@@ -106,6 +108,33 @@ Array.from(fertilizePlantButtons).forEach((button) => {
           })      
     })
     })
-
   })
-  
+  // Set maximum date of form date picker to today
+  const datePickers = document.querySelectorAll('.date-picker')
+  datePickers.forEach(datePicker => datePicker.max = new Date().toLocaleDateString('en-ca'))
+
+  // const addPlantForm = document.querySelector('.add-plant-form')
+
+  // // Form validation for add plant form
+  // addPlantForm.addEventListener('submit', (e) => {
+  //   for (element of 
+  //     [
+  //     document.querySelector('#plantspecies'),
+  //     document.querySelector('#location'),
+  //     document.querySelector('#wateringFrequency'),
+  //     document.querySelector('#lastWatered'),
+  //     document.querySelector('#lastFertilized'),
+  //     document.querySelector('#lastRepotted')
+  //     ]) 
+  //   {
+  //     console.log('checking if valid!')
+  //     addErrorIfInvalid (element)
+  //   }
+
+  //   function addErrorIfInvalid (element) {
+  //     if (!element.validity.valid) {
+  //       element.classList.add('error')
+  //       e.preventDefault()
+  //     }
+  //   }
+  // })

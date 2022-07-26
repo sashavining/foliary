@@ -67,6 +67,17 @@ body{
     margin: 0 auto;
 }
 
+input.error{
+    border-color: red;
+}
+
+input.success{
+    border-color: green;
+}
+
+input.success{
+    border-color: green;
+}
 
 @media screen and (min-width: 650px) {
     .mobile-visible{

@@ -1,20 +1,9 @@
-const noteEditButtons = document.querySelectorAll(".note-open-edit-modal-button");
-const noteDeleteButtons = document.querySelectorAll(".note-open-delete-modal-button");
-const submitNoteEditButton = document.querySelector(".submit-edit-note-button") 
-const submitNoteDeleteButton = document.querySelector(".submit-delete-note-button") 
 const mainSection = document.querySelector('#main-section')
-const deletePlantModalOpenButton = document.querySelector('#delete-plant-modal-open-button')
-const deletePlantButton = document.querySelector('#submit-delete-plant-button')
-const addImageModalOpenButton = document.querySelector('#add-image-modal-open-button')
-const addImageButton = document.querySelector('#add-image')
 const imageInput = document.querySelector('#uploadImage')
-const deleteImageModalOpenButtons = document.querySelectorAll('#deleteImageModalOpenButton')
-const deleteImageButton = document.querySelector('#deleteImage')
-const editImageModalOpenButtons = document.querySelectorAll('#editImageModalOpenButton')
-const editImageButton = document.querySelector('#edit-image')
-const editPlantModalOpenButton = document.querySelector('#edit-plant-modal-open-button')
-const editPlantButton = document.querySelector('#edit-plant')
 
+
+const noteDeleteButtons = document.querySelectorAll(".note-open-delete-modal-button");
+const submitNoteDeleteButton = document.querySelector(".submit-delete-note-button") 
 
 // Delete a note
 Array.from(noteDeleteButtons).forEach((button) => {
@@ -41,6 +30,9 @@ Array.from(noteDeleteButtons).forEach((button) => {
     })
   })
 });
+
+const noteEditButtons = document.querySelectorAll(".note-open-edit-modal-button");
+const submitNoteEditButton = document.querySelector(".submit-edit-note-button") 
 
 // Edit a note
 Array.from(noteEditButtons).forEach((button) => {
@@ -71,6 +63,9 @@ Array.from(noteEditButtons).forEach((button) => {
   })
 });
   
+const deletePlantModalOpenButton = document.querySelector('#delete-plant-modal-open-button')
+const deletePlantButton = document.querySelector('#submit-delete-plant-button')
+
 // Delete a user's plant
 deletePlantModalOpenButton.addEventListener('click', function () {    
   let plantId = mainSection.dataset.plantid
@@ -92,6 +87,9 @@ deletePlantModalOpenButton.addEventListener('click', function () {
     })
   })
 })
+
+const editPlantModalOpenButton = document.querySelector('#edit-plant-modal-open-button')
+const editPlantButton = document.querySelector('#edit-plant')
 
 // Edit a user's plant
 editPlantModalOpenButton.addEventListener('click', function () {    
@@ -130,6 +128,9 @@ editPlantModalOpenButton.addEventListener('click', function () {
   })
 })
 
+const addImageModalOpenButton = document.querySelector('#add-image-modal-open-button')
+const addImageButton = document.querySelector('#add-image')
+
 // Add image fetch request
 addImageModalOpenButton.addEventListener('click', function () {  
   let plantId = mainSection.dataset.plantid
@@ -146,6 +147,9 @@ addImageModalOpenButton.addEventListener('click', function () {
     );
   })
 })
+
+const deleteImageModalOpenButtons = document.querySelectorAll('#deleteImageModalOpenButton')
+const deleteImageButton = document.querySelector('#deleteImage')
 
 // Delete image fetch request
 Array.from(deleteImageModalOpenButtons).forEach((button) => {
@@ -174,6 +178,9 @@ Array.from(deleteImageModalOpenButtons).forEach((button) => {
     })  
   })
 })
+
+const editImageModalOpenButtons = document.querySelectorAll('#editImageModalOpenButton')
+const editImageButton = document.querySelector('#edit-image')
 
 // Update image fetch request
 Array.from(editImageModalOpenButtons).forEach((button) => {
