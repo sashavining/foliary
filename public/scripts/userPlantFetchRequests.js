@@ -145,7 +145,7 @@ addImageModalOpenButton.addEventListener('click', function () {
       method: 'POST',
       body: formData
     }).then( response => window.location = response.url   
-    ).catch( error => console.log(error) // Handle the error response object
+    ).catch( error => console.log(error) 
     );
   })
 })
