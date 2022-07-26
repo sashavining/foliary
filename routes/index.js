@@ -31,8 +31,9 @@ router.get("/register", (req, res) => {
 });
 
 router.get("/login", (req, res) => {
+    if (!req.session.messages) req.session.messages = []
     if (!req.user) {
-        res.render("users/login")
+        res.render("users/login", {messages: req.session.messages})
     } else {
         res.redirect(`users/${req.user._id}/dashboard`)
     }
@@ -44,6 +45,7 @@ router.post("/register", (req, res, next) => {
     bcrypt.hash(req.body.password, 10, (err, hashedPassword) => {
         if (err) {
             console.log(err)
+            res.redirect("/register");
         } else {
             const user = new User({
                 username: req.body.username,
@@ -52,24 +54,19 @@ router.post("/register", (req, res, next) => {
                     if (err) { 
                       return next(err);
                     }
-                    res.redirect("/");
-                  });
+                    res.redirect("/login");
+                });
         }
     }) 
 });
 
-/* 
-To-do:
-1. Error message for login 
-2. Redirect to user dashboard on successful login
-*/
 
 router.post(
     "/login",
-    passport.authenticate("local", {
-      successRedirect: "/",
-      failureRedirect: "/"
-    })
+    passport.authenticate('local', { failureRedirect: '/login', failureMessage: true }),
+    function(req, res) {
+      res.redirect('/users/' + req.user._id + '/dashboard');
+    }
 );
 
 router.get("/logout", (req, res) => {

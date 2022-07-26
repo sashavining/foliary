@@ -1,8 +1,7 @@
 <main class="form-signin text-center mt-4">
   <form action="/login" method="POST">
     <i class="bi bi-flower3 text-warning mb-sm-4 display-3"></i>
-    <h1 class="h2 mb-5 fw-normal">Log in</h1>
-
+    <h1 class="h2 mb-3 fw-normal">Log in</h1>
     <div class="form-floating">
       <input type="text" class="form-control mb-3" id="username" placeholder="Username" name="username" required>
       <label for="username">Username</label>
@@ -11,9 +10,12 @@
       <input type="password" class="form-control mb-3" id="password" placeholder="Password" name="password" required>
       <label for="password">Password</label>
     </div>
+    <% if (messages.length > 0) { %>
+      <div class="error mb-3 text-danger" ><%= messages[messages.length - 1] %></div>
+      <% } %>
 
     <button class="w-100 btn btn-lg btn-success mb-3" type="submit" value="login">Login</button>
-    <div class="error" style="color: red;"></div><br>
+ 
     <a href="/register" class="text-success">Don't have an account? Register</a>
   </form>
 </main>
