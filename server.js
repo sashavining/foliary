@@ -9,13 +9,16 @@ const expressLayouts = require('express-ejs-layouts')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const passport = require("passport");
-const LocalStrategy = require("passport-local").Strategy;
+// const LocalStrategy = require("passport-local").Strategy;
 const session = require("express-session");
-const User = require('./models/user')
-const bcrypt = require('bcryptjs')
-const { localStrategy, serializeUser, deserializeUser } = require('./utils/passport')
+const flash = require('connect-flash');  
+// const User = require('./models/user')
+// const bcrypt = require('bcryptjs')
+// const { localStrategy, serializeUser, deserializeUser } = require('./utils/passport')
 
 /*const cl = new Cloudinary({cloud_name: process.env.CLOUD_NAME, secure: true});*/
+
+
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
@@ -32,6 +35,7 @@ app.use(function(req, res, next) {
   next();
 });
 app.use(express.urlencoded({ extended: false }));
+app.use(flash())
 
 
 const indexRouter = require('./routes/index')
@@ -52,8 +56,6 @@ app.use('/users', userRouter)
 app.use((req, res, next) => {
   res.render('404')
 })
-
-
 
 app.listen(process.env.PORT || 8000)
 

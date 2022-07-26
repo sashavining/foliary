@@ -36,8 +36,6 @@
       setSuccessFor(password);
     }
 
-    console.log(usernameValue, passwordValue)
-
   if (errors === 0) {
     fetch(`/register`, {
       method: 'POST',
@@ -48,7 +46,7 @@
       })
     })
       .then(response => {
-      window.location = response.url    
+      window.location = response.url   
     })
       .catch(err => {
       console.log(err)
