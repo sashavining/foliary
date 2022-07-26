@@ -38,7 +38,9 @@
       
   
       <button class="w-100 btn btn-lg btn-success mb-3" type="submit">Register</button>
-      <div class="error" style="color: red;"></div><br>
+      <% if (errorMessage) { %>
+        <div class="mb-3 text-danger" ><%= errorMessage %></div>
+      <% } %>      
       <a href="/login" class="text-success">Already have an account? Login</a>
     </form>
   </main>

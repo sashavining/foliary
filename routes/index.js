@@ -5,6 +5,10 @@ const { createManyImageTags } = require('../utils/cloudinaryFunctions')
 const User = require('../models/user')
 const passport = require('passport')
 const bcrypt = require('bcryptjs')
+const flash = require('connect-flash');  
+const app = express()
+
+app.use(flash())
 
 router.get('/', async (req, res) => {
     try {
@@ -17,14 +21,15 @@ router.get('/', async (req, res) => {
 
         res.render('index', { plants: plants, plantsImageTags: plantsImageTags })
     } catch (err) {
-        console.log(err)
         res.render('index', { plants: [], plantsImageTags: [] })
     }
 });
 
 router.get("/register", (req, res) => {
+    const errorMessage = req.flash('error')
+    console.log(errorMessage)
     if (!req.user) {
-        res.render("users/register")
+        res.render("users/register", { errorMessage })
     } else {
         res.redirect(`users/${req.user._id}/dashboard`)
     }
@@ -44,7 +49,7 @@ router.get("/admin", (req, res) => res.render("users/admin"));
 router.post("/register", (req, res, next) => {
     bcrypt.hash(req.body.password, 10, (err, hashedPassword) => {
         if (err) {
-            console.log(err)
+            req.flash('error', 'Registration failed. Try again.')
             res.redirect("/register");
         } else {
             const user = new User({
@@ -52,10 +57,13 @@ router.post("/register", (req, res, next) => {
                 password: hashedPassword
                 }).save(err => {
                     if (err) { 
-                      return next(err);
+                        req.flash('error', 'There is already a user with that email address. Try again.')
+                        res.redirect("/register");                                
+                    } else {
+                        req.flash('success', 'Registration successful.')
+                        res.redirect("/login")
                     }
-                    res.redirect("/login");
-                });
+            });
         }
     }) 
 });
