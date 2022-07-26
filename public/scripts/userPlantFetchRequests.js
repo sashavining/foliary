@@ -134,11 +134,13 @@ const addImageButton = document.querySelector('#add-image')
 // Add image fetch request
 addImageModalOpenButton.addEventListener('click', function () {  
   let plantId = mainSection.dataset.plantid
-  
+
   addImageButton.addEventListener('click', function(e) {
     e.preventDefault()
+    let loader = `<div class="loader-container"><div class="loader"><div class="circle"></div><div class="circle"></div></div></div>`
     const form = document.getElementById("uploadImageForm");
     const formData = new FormData(form);
+    form.innerHTML = loader;
     fetch(`/users/plants/${plantId}/images`, {
       method: 'POST',
       body: formData
