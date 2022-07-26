@@ -1,16 +1,3 @@
-@media(min-width: 768px) {
-    .news-input{
-        width: 50%;
-    }
-}
-
-@media(max-width: 768px) {
-    .plant-card {
-        text-align:center;
-    }
-}
-
-
 .navbar a:focus, a.dropdown-item:active{
     background-color: #28a745 !important;
 }
@@ -142,5 +129,17 @@ body{
     }
     .mobile-visible {
         display: inline-block;
+    }
+}
+
+@media(min-width: 768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    .plant-card {
+        text-align:center;
     }
 }
