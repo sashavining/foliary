@@ -27,7 +27,6 @@ router.get('/', async (req, res) => {
 
 router.get("/register", (req, res) => {
     const errorMessage = req.flash('error')
-    console.log(errorMessage)
     if (!req.user) {
         res.render("users/register", { errorMessage })
     } else {
@@ -46,11 +45,11 @@ router.get("/login", (req, res) => {
 
 router.get("/admin", (req, res) => res.render("users/admin"));
 
-router.post("/register", (req, res, next) => {
+router.post("/register/", (req, res, next) => {
     bcrypt.hash(req.body.password, 10, (err, hashedPassword) => {
         if (err) {
             req.flash('error', 'Registration failed. Try again.')
-            res.redirect("/register");
+            res.status(500).send()                        
         } else {
             const user = new User({
                 username: req.body.username,
@@ -58,10 +57,9 @@ router.post("/register", (req, res, next) => {
                 }).save(err => {
                     if (err) { 
                         req.flash('error', 'There is already a user with that email address. Try again.')
-                        res.redirect("/register");                                
+                        res.status(500).send()                        
                     } else {
-                        req.flash('success', 'Registration successful.')
-                        res.redirect("/login")
+                        res.redirect("/login");
                     }
             });
         }

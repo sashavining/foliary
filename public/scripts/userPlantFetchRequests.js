@@ -80,7 +80,11 @@ deletePlantModalOpenButton.addEventListener('click', function () {
         userId: userId
       })
     }).then(response => {
-      window.location = response.url    
+      if (response.url) {
+        window.location = response.url 
+      } else {
+        window.location.reload(true);
+      }
     })
       .catch(err => {
         console.log(err)
@@ -139,6 +143,7 @@ addImageModalOpenButton.addEventListener('click', function () {
     e.preventDefault()
     let loader = `<div class="loader-container"><div class="loader"><div class="circle"></div><div class="circle"></div></div></div>`
     const form = document.getElementById("uploadImageForm");
+    
     const formData = new FormData(form);
     form.innerHTML = loader;
     fetch(`/users/plants/${plantId}/images`, {
