@@ -54,7 +54,6 @@ Array.from(noteEditButtons).forEach((button) => {
           'plantId': plantId
           })
         }).then(response => {
-            console.log(response)
             window.location.reload(true)
         }).catch(err => {
             console.log(err)

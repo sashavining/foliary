@@ -16,23 +16,23 @@
           <span id="wateringInterval"><%= plant.wateringInterval %></span>  
         </div>
         <div>
-        <span class="h4 mx-4 mt-1">Last Watered:</span>
         <% if (Date.parse(plant.lastWatered) !== 0) { %>
+          <span class="h4 mx-4 mt-1">Last Watered:</span>
         <span id="lastWatered"><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
         <% } else { %> 
           <span id="lastWatered"></span>  
         <% } %> 
         <div>
-          <span class="h4 mx-4 mt-1">Last Fertilized:</span>
           <% if (Date.parse(plant.lastFertilized) !== 0) { %>
+            <span class="h4 mx-4 mt-1">Last Fertilized:</span>
           <span id="lastFertilized"><%= new Date(plant.lastFertilized).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
           <% } else { %> 
             <span id="lastFertilized"></span>  
           <% } %> 
         </div>
         <div>
-          <span class="h4 mx-4 mt-1">Last Repotted:</span>
           <% if (Date.parse(plant.lastRepotted) !== 0) { %>
+            <span class="h4 mx-4 mt-1">Last Repotted:</span>
           <span id="lastRepotted"><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
           <% } else { %> 
             <span id="lastRepotted"></span>  
