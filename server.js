@@ -2,21 +2,14 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
   }
 
-// const cloudinary = require('cloudinary').v2
 const express = require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts')
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const passport = require("passport");
-// const LocalStrategy = require("passport-local").Strategy;
 const session = require("express-session");
 const flash = require('connect-flash');  
-// const User = require('./models/user')
-// const bcrypt = require('bcryptjs')
-// const { localStrategy, serializeUser, deserializeUser } = require('./utils/passport')
-
-/*const cl = new Cloudinary({cloud_name: process.env.CLOUD_NAME, secure: true});*/
 
 
 app.set('view engine', 'ejs')

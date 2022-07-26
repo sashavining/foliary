@@ -44,8 +44,11 @@
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editPlant" id="edit-plant-modal-open-button"><i class="bi bi-pencil-square"></i> Edit Plant </button>
           <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#deletePlant" id="delete-plant-modal-open-button"><i class="bi bi-trash"></i> Delete Plant </button>
         </div>
+        </div>
       </div>
     </div>
+    </div>
+    <div>
       <% if (notes.length > 0) { %>
       <h2 class="border-bottom text-success text-center pr-3 pb-2 pt-4 pt-md-0 my-3">Notes</h2>
       <div class="accordion" id="accordion">
@@ -71,7 +74,7 @@
   </div>
   <% if (plantImageTags.length > 1) { %>
     <h2 class="border-bottom text-success text-center pr-3 pb-2 pt-4 pt-md-0 my-5">Images</h2>
-    <%- include('../partials/imageGallery.ejs') %>
+    <%- include('../partials/layout/imageGallery.ejs') %>
   <% } %>
 
 </section>
@@ -84,7 +87,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <%- include('../partials/addNote.ejs') %>
+        <%- include('../partials/forms/addNote.ejs') %>
       </div>
     </div>
   </div>
@@ -98,7 +101,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <%- include('../partials/editNote.ejs') %>
+        <%- include('../partials/forms/editNote.ejs') %>
       </div>
     </div>
   </div>
@@ -112,7 +115,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <%- include('../partials/deleteNote.ejs') %>
+        <%- include('../partials/forms/deleteNote.ejs') %>
       </div>
     </div>
   </div>
@@ -126,7 +129,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <%- include('../partials/deletePlant.ejs') %>
+        <%- include('../partials/forms/deletePlant.ejs') %>
       </div>
     </div>
   </div>
@@ -140,7 +143,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <%- include('../partials/addImage.ejs') %>
+        <%- include('../partials/forms/addImage.ejs') %>
       </div>
     </div>
   </div>
@@ -155,7 +158,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <%- include('../partials/editPlant.ejs') %>
+        <%- include('../partials/forms/editPlant.ejs') %>
       </div>
     </div>
   </div>
