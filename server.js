@@ -2,7 +2,7 @@ if (process.env.NODE_ENV !== 'production') {
     require('dotenv').config()
   }
 
-const cloudinary = require('cloudinary').v2
+// const cloudinary = require('cloudinary').v2
 const express = require('express')
 const app = express()
 const expressLayouts = require('express-ejs-layouts')

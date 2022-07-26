@@ -1,7 +1,7 @@
 <h1 class="text-success text-center mt-5" id="nickname"><%= plant.name %></h1>
 <div class="h2 text-center text-secondary mb-4 border-bottom pb-5"><%= plant.species.BotanicalName %></div>
 
-<section class="p-2 my-5 pt-5 text-center text-md-start" data-plantid="<%= plant._id %>" data-userid="<%= currentUser._id %>" id="main-section">
+<section class="p-2 my-5 py-5 text-center text-md-start" data-plantid="<%= plant._id %>" data-userid="<%= currentUser._id %>" id="main-section">
   <div class="container">
     <div class="row align-items-start justify-content-start">
       <div class="col-md"><%- plantImageTags[plantImageTags.length - 1].imageTag %></div>

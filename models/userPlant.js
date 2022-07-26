@@ -22,15 +22,15 @@ const UserPlantSchema = new Mongoose.Schema({
   },
   lastWatered: {
     type: Date,
-    required: false,
+    required: true,
   },
   lastFertilized: {
     type: Date,
-    required: false,
+    required: true,
   },
   lastRepotted: {
     type: Date,
-    required: false,
+    required: true,
   },
   images: {
     type: Array,
