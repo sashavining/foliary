@@ -141,17 +141,22 @@ addImageModalOpenButton.addEventListener('click', function () {
 
   addImageButton.addEventListener('click', function(e) {
     e.preventDefault()
-    let loader = `<div class="loader-container"><div class="loader"><div class="circle"></div><div class="circle"></div></div></div>`
-    const form = document.getElementById("uploadImageForm");
+    const fileInput = document.getElementById("uploadImage")
+    if (fileInput.files.length !== 0) {
+      let loader = `<div class="loader-container"><div class="loader"><div class="circle"></div><div class="circle"></div></div></div>`
+      const form = document.getElementById("uploadImageForm");
     
-    const formData = new FormData(form);
-    form.innerHTML = loader;
-    fetch(`/users/plants/${plantId}/images`, {
-      method: 'POST',
-      body: formData
-    }).then( response => window.location = response.url   
-    ).catch( error => console.log(error) 
-    );
+      const formData = new FormData(form);
+      form.innerHTML = loader;
+      fetch(`/users/plants/${plantId}/images`, {
+        method: 'POST',
+        body: formData
+      }).then( response => window.location = response.url   
+      ).catch( error => console.log(error) 
+      );
+    } else {
+      document.getElementById('file-error').textContent = "No file selected!"
+    }
   })
 })
 
