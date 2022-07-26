@@ -92,20 +92,20 @@ const editPlantModalOpenButton = document.querySelector('#edit-plant-modal-open-
 const editPlantButton = document.querySelector('#edit-plant')
 
 // Edit a user's plant
-editPlantModalOpenButton.addEventListener('click', function () {    
+editPlantModalOpenButton.addEventListener('click', function (e) {    
   const plantId = mainSection.dataset.plantid
   const userId = mainSection.dataset.userid
 
   editPlantButton.addEventListener('click', function(e) {
-    // Collects form inputs. If the user did not input a value for one of the forms, it falls back to the existing values.
+    e.preventDefault()
+
     const nickname = document.querySelector('#edited-plant-name').value || document.querySelector('#nickname').textContent
     const location = document.querySelector('#edited-location').value 
     const wateringInterval = document.querySelector('#edited-watering-interval').value || document.querySelector('#wateringInterval').textContent
-    const lastWatered = document.querySelector('#edited-last-watered').value || document.querySelector('#lastWatered').textContent
-    const lastFertilized = document.querySelector('#edited-last-fertilized').value || document.querySelector('#lastFertilized').textContent
-    const lastRepotted = document.querySelector('#edited-last-repotted').value || document.querySelector('#lastRepotted').textContent 
+    const lastWatered = document.querySelector('#edited-last-watered').value || document.querySelector('#lastWatered').textContent || new Date(0)
+    const lastFertilized = document.querySelector('#edited-last-fertilized').value || document.querySelector('#lastFertilized').textContent || new Date(0)
+    const lastRepotted = document.querySelector('#edited-last-repotted').value || document.querySelector('#lastRepotted').textContent || new Date(0)
 
-    e.preventDefault()
 
     fetch(`/users/plants/${plantId}`, {
       method: 'PUT',

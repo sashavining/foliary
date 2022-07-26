@@ -16,17 +16,28 @@
           <span id="wateringInterval"><%= plant.wateringInterval %></span>  
         </div>
         <div>
-          <span class="h4 mx-4 mt-1">Last Watered:</span>
-          <span id="lastWatered"><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
-        </div>
+        <span class="h4 mx-4 mt-1">Last Watered:</span>
+        <% if (Date.parse(plant.lastWatered) !== 0) { %>
+        <span id="lastWatered"><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+        <% } else { %> 
+          <span id="lastWatered"></span>  
+        <% } %> 
         <div>
           <span class="h4 mx-4 mt-1">Last Fertilized:</span>
+          <% if (Date.parse(plant.lastFertilized) !== 0) { %>
           <span id="lastFertilized"><%= new Date(plant.lastFertilized).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+          <% } else { %> 
+            <span id="lastFertilized"></span>  
+          <% } %> 
         </div>
         <div>
-            <span class="h4 mx-4 mt-1">Last Repotted:</span>
-            <span id="lastRepotted"><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
-          </div>
+          <span class="h4 mx-4 mt-1">Last Repotted:</span>
+          <% if (Date.parse(plant.lastRepotted) !== 0) { %>
+          <span id="lastRepotted"><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+          <% } else { %> 
+            <span id="lastRepotted"></span>  
+          <% } %> 
+          <div>
         <div class="text-center mt-4">
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addImage" id="add-image-modal-open-button"><i class="bi bi-plus-circle"></i> Add Photo </button>
           <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addNote"><i class="bi bi-plus-circle"></i> Add Note </button>
@@ -34,6 +45,7 @@
           <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#deletePlant" id="delete-plant-modal-open-button"><i class="bi bi-trash"></i> Delete Plant </button>
         </div>
       </div>
+    </div>
       <% if (notes.length > 0) { %>
       <h2 class="border-bottom text-success text-center pr-3 pb-2 pt-4 pt-md-0 my-3">Notes</h2>
       <div class="accordion" id="accordion">
