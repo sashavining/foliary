@@ -8,32 +8,32 @@
       <div class="col-md col-7-md">
         <h2 class="border-bottom text-success pr-3 pb-2 pt-4 pt-md-0">Plant Detail</h2>
         <div>
-          <span class="h4 mx-4 mt-3">Location:</span>
-          <span id="location"><%= plant.location %></span>
+          <span class="h4 mt-3">Location:</span>
+          <span id="location" class="mx-3"><%= plant.location %></span>
         </div>
         <div>
-          <span class="h4 mx-4 mt-1">Watering Interval:</span>
-          <span id="wateringInterval"><%= plant.wateringInterval %></span>  
+          <span class="h4 mt-1">Watering Interval:</span>
+          <span id="wateringInterval" class="mx-3"><%= plant.wateringInterval %></span>  
         </div>
         <div>
         <% if (Date.parse(plant.lastWatered) !== 0) { %>
-          <span class="h4 mx-4 mt-1">Last Watered:</span>
-        <span id="lastWatered"><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+          <span class="h4 mt-1">Last Watered:</span>
+        <span id="lastWatered" class="mx-3"><%= new Date(plant.lastWatered).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
         <% } else { %> 
           <span id="lastWatered"></span>  
         <% } %> 
         <div>
           <% if (Date.parse(plant.lastFertilized) !== 0) { %>
-            <span class="h4 mx-4 mt-1">Last Fertilized:</span>
-          <span id="lastFertilized"><%= new Date(plant.lastFertilized).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+            <span class="h4 mt-1">Last Fertilized:</span>
+          <span id="lastFertilized" class="mx-3"><%= new Date(plant.lastFertilized).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
           <% } else { %> 
             <span id="lastFertilized"></span>  
           <% } %> 
         </div>
         <div>
           <% if (Date.parse(plant.lastRepotted) !== 0) { %>
-            <span class="h4 mx-4 mt-1">Last Repotted:</span>
-          <span id="lastRepotted"><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
+            <span class="h4 mt-1">Last Repotted:</span>
+          <span id="lastRepotted" class="mx-3"><%= new Date(plant.lastRepotted).toUTCString().split(" ").slice(0, 4).join(" ")%></span>  
           <% } else { %> 
             <span id="lastRepotted"></span>  
           <% } %> 
