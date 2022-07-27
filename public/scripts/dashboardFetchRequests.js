@@ -1,3 +1,5 @@
+import { setSuccessFor, setErrorFor, isValidDate } from './formValidationFunctions.js'
+
 const mainSection = document.querySelector('#main-section')
 
 // Add location fetch request and form validation
@@ -148,10 +150,6 @@ if (errors === 0) {
     console.log(err)
   })      
 
-}
-
-function isValidDate(date) {
-  return date instanceof Date && !isNaN(date);
 }
 }
 
@@ -405,27 +403,26 @@ const deleteLocationButton = document.querySelector("#delete-location")
   }
   }
   
-// Utility functions for form validation
 
-
-function isValidDate(date) {
-  return date instanceof Date && !isNaN(date);
-}
-
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-  formControl.classList.remove('success')
-  formControl.classList.add('error')
-  formControl.classList.add('mb-5')
-  small.innerText = message;
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-  formControl.classList.remove('error')
-  formControl.classList.remove('mb-5')
-  formControl.classList.add('success')
-  small.innerText = ''
-}
+  // function isValidDate(date) {
+  //   return date instanceof Date && !isNaN(date);
+  // }
+  
+  // function setErrorFor(input, message) {
+  //   const formControl = input.parentElement;
+  //   const small = formControl.querySelector('small');
+  //   formControl.classList.remove('success')
+  //   formControl.classList.add('error')
+  //   formControl.classList.add('mb-5')
+  //   small.innerText = message;
+  // }
+  
+  // function setSuccessFor(input) {
+  //   const formControl = input.parentElement;
+  //   const small = formControl.querySelector('small');
+  //   formControl.classList.remove('error')
+  //   formControl.classList.remove('mb-5')
+  //   formControl.classList.add('success')
+  //   small.innerText = ''
+  // }
+  

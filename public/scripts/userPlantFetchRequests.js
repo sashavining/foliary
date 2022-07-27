@@ -1,6 +1,7 @@
+import { isValidDate, setErrorFor, setSuccessFor } from './formValidationFunctions.js'
+
 const mainSection = document.querySelector('#main-section')
 const imageInput = document.querySelector('#uploadImage')
-
 
 const noteDeleteButtons = document.querySelectorAll(".note-open-delete-modal-button");
 const submitNoteDeleteButton = document.querySelector(".submit-delete-note-button") 
@@ -281,24 +282,3 @@ Array.from(editImageModalOpenButtons).forEach((button) => {
   })
 })
 
-function isValidDate(date) {
-  return date instanceof Date && !isNaN(date);
-}
-
-function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-  formControl.classList.remove('success')
-  formControl.classList.add('error')
-  formControl.classList.add('mb-5')
-  small.innerText = message;
-}
-
-function setSuccessFor(input) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector('small');
-  formControl.classList.remove('error')
-  formControl.classList.remove('mb-5')
-  formControl.classList.add('success')
-  small.innerText = '';
-}
