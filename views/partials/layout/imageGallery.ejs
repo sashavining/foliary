@@ -2,7 +2,7 @@
       <div class="container">
         <div class="row my-2">
           <% plantImageTags.forEach((image, index) => { %>
-            <div class="col my-4">
+            <div class="col my-4 mx-2">
                   <div class="mt-2 mb-4"><%= new Date(image.uploaded).toUTCString().split(" ").slice(0, 4).join(" ") %></div>
                   <%- image.imageTag %> 
                   <div data-cloudinaryid="<%= image.cloudinaryId %>">
