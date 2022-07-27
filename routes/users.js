@@ -120,25 +120,29 @@ router.put('/:id/locations', checkAuthenticated, async (req, res) => {
 
 // Add a new note associated with a given plant
 router.post('/plants/:id/notes', checkAuthenticated, async (req, res) => {
-    try {
-        const plant = await UserPlant.findById(req.params.id)
-        const note = new Note({
-            plant: req.params.id,
-            user: plant.owner.toString(),
-            body: req.body.body,
-            date: new Date(req.body.date)
-        }).save(err => {
-            if (err) { 
-              console.log(err)
-              res.sendStatus(500)
-            } else {
-              res.redirect(`/users/plants/${req.params.id}`)
-            }
-        });
-    } catch (err) {
-        console.log(err)
-        res.redirect(`/users/plants/${req.params.id}`)
-    }
+        if (req.body.body && req.body.date) {
+            const plant = await UserPlant.findById(req.params.id)
+            try {
+                const note = new Note({
+                    plant: req.params.id,
+                    user: plant.owner.toString(),
+                    body: req.body.body,
+                    date: new Date(req.body.date)
+            }).save(err => {
+                if (err) { 
+                    console.log(err)
+                    res.sendStatus(500)
+                } else {
+                  res.redirect(`/users/plants/${req.params.id}`)
+                }
+            });
+            } catch (err) {
+                console.log(err)
+                res.redirect(`/users/plants/${req.params.id}`)
+            } 
+        } else {
+            res.sendStatus(204)
+        }   
 })
 
 // Edit notes route
