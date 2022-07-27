@@ -2,6 +2,14 @@
     background-color: #28a745 !important;
 }
 
+.nav-link {
+    color: #ffffff !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #ffffffd3 !important;
+}
+
 .form-signin {
     width: 50%;
     margin: 0 auto;
@@ -81,10 +89,6 @@ body{
 .form-floating>.required::after {
     top: 5px;
 }
-
-
-
-
 
 .form-control-custom.error input, .form-control-custom.error select {
 	border-color: #e74c3c;
