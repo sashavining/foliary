@@ -47,7 +47,7 @@ app.use('/', indexRouter)
 app.use('/plants', plantRouter)
 app.use('/users', userRouter)
 app.use((req, res, next) => {
-  res.render('404')
+  res.render('partials/errors/404')
 })
 
 app.listen(process.env.PORT || 8000)

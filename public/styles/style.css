@@ -77,9 +77,14 @@ body{
         position: absolute;
         top: -5px;
 }
+
 .form-floating>.required::after {
     top: 5px;
 }
+
+
+
+
 
 .form-control-custom.error input, .form-control-custom.error select {
 	border-color: #e74c3c;

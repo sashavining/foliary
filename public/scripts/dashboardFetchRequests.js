@@ -1,5 +1,161 @@
 const mainSection = document.querySelector('#main-section')
 
+// Add location fetch request and form validation
+
+const addLocationForm = document.querySelector('#add-location-form')
+addLocationForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  let errors = 0;
+  const locationInput = document.getElementById('newLocation')
+  if (locationInput.value === '') {
+    errors++
+    setErrorFor(locationInput, 'Enter a location!');
+  } if (locationInput.length > 40) {
+    errors++
+    setErrorFor(locationInput, 'Location names must be fewer than 40 characters!');
+  }
+  if (errors === 0) {
+    const userId = addLocationForm.dataset.userid
+    fetch(`/users/${userId}/locations`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        newLocation: locationInput.value
+      })
+    })
+      .then(response => {
+      window.location = response.url    
+    })
+      .catch(err => {
+      console.log(err)
+    })      
+  
+  }
+})
+
+function checkInputs(name, plantSpecies, location, wateringFrequency, lastWatered, lastFertilized, lastRepotted) {
+
+  let errors = 0
+
+  let speciesValue = plantSpecies.value.split("-")[0]
+  if (speciesValue === '') {
+    errors++
+    setErrorFor(plantSpecies, 'Choose a plant species!');
+  } else {
+    setSuccessFor(plantSpecies);
+  }
+
+  let nameValue = name.value.trim()
+  if (
+    nameValue === '' &&
+    speciesValue === ''
+  ) {
+    errors++
+    setErrorFor(name, 'Please input a nickname and/or plant species!');
+  } else if(nameValue === '') {
+    nameValue = plantSpecies.value.split("-")[1]
+    setSuccessFor(name);
+  }  else {
+    setSuccessFor(name);
+  }
+
+  let locationValue = location.value.trim()    
+  if(locationValue === '') {
+    errors++
+    setErrorFor(location, 'Choose a location!');
+  } else {
+    setSuccessFor(location);
+  }
+
+  let wateringFrequencyValue = wateringFrequency.value.trim()
+  if(wateringFrequencyValue === '' || 
+  wateringFrequencyValue < 1 || 
+  wateringFrequencyValue > 90) {
+    errors++
+    setErrorFor(wateringFrequency, 'Enter a valid watering frequency value (between 1 and 90)!');
+  } else {
+    setSuccessFor(wateringFrequency);
+  }
+      
+  let minDate = new Date('1899-01-01');
+  let maxDate = new Date(Date.now());
+
+  let lastWateredValue = lastWatered.value
+  if (lastWateredValue === '') {
+    lastWateredValue = new Date(0);
+    setSuccessFor(lastWatered);
+  } else if (
+    !isValidDate(new Date(lastWateredValue)) ||
+    new Date(lastWateredValue) >= maxDate ||
+    new Date(lastWateredValue) <= minDate) {
+    errors++
+    setErrorFor(lastWatered, 'Please enter a date between 1/1/1899 and today.');
+  } else {
+    lastWateredValue = new Date(lastWateredValue)
+    setSuccessFor(lastWatered);
+  }
+
+  let lastFertilizedValue = lastFertilized.value
+  if (lastFertilizedValue === '') {
+    lastFertilizedValue = new Date(0);
+    setSuccessFor(lastFertilized);
+  } else if (
+    !isValidDate(new Date(lastFertilizedValue)) ||
+    new Date(lastFertilizedValue) >= maxDate ||
+    new Date(lastFertilizedValue) <= minDate) {
+    errors++
+    setErrorFor(lastFertilized, 'Please enter a date between 1/1/1899 and today.');
+  } else {
+    lastFertilizedValue = new Date(lastFertilizedValue)
+    setSuccessFor(lastFertilized);
+  }
+
+
+  let lastRepottedValue = lastRepotted.value
+  if (lastRepottedValue === '') {
+    lastRepottedValue = new Date(0);
+    setSuccessFor(lastRepotted);
+  } else if (
+    !isValidDate(new Date(lastRepottedValue)) ||
+    new Date(lastRepottedValue) >= maxDate ||
+    new Date(lastRepottedValue) <= minDate) {
+    errors++
+    setErrorFor(lastRepotted, 'Please enter a date between 1/1/1899 and today.');
+  } else {
+    lastRepottedValue = new Date(lastRepottedValue)
+    setSuccessFor(lastRepotted);
+  }
+
+if (errors === 0) {
+  const userId = addPlantForm.dataset.userid
+  fetch(`/users/${userId}/plants`, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      species: speciesValue,
+      name: nameValue,
+      location: locationValue,
+      wateringInterval: wateringFrequencyValue,
+      lastWatered: lastWateredValue,
+      lastFertilized: lastFertilizedValue,
+      lastRepotted: lastRepottedValue
+    })
+  })
+    .then(response => {
+    window.location = response.url    
+  })
+    .catch(err => {
+    console.log(err)
+  })      
+
+}
+
+function isValidDate(date) {
+  return date instanceof Date && !isNaN(date);
+}
+}
+
+
 const waterPlantButtons = document.querySelectorAll('#water-plant')
 
 // Water plant fetch request
@@ -130,7 +286,7 @@ const deleteLocationButton = document.querySelector("#delete-location")
     
     checkInputs(name, plantSpecies, location, wateringFrequency, lastWatered, lastFertilized, lastRepotted);
   });
-  
+
   function checkInputs(name, plantSpecies, location, wateringFrequency, lastWatered, lastFertilized, lastRepotted) {
 
     let errors = 0
@@ -247,27 +403,29 @@ const deleteLocationButton = document.querySelector("#delete-location")
     })      
 
   }
+  }
+  
+// Utility functions for form validation
 
-  function isValidDate(date) {
-    return date instanceof Date && !isNaN(date);
-  }
-  
-  function setErrorFor(input, message) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-    formControl.classList.remove('success')
-    formControl.classList.add('error')
-    formControl.classList.add('mb-5')
-    small.innerText = message;
-  }
-  
-  function setSuccessFor(input) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-    formControl.classList.remove('error')
-    formControl.classList.remove('mb-5')
-    formControl.classList.add('success')
-    small.innerText = '';
-  }
+
+function isValidDate(date) {
+  return date instanceof Date && !isNaN(date);
 }
-  
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.classList.remove('success')
+  formControl.classList.add('error')
+  formControl.classList.add('mb-5')
+  small.innerText = message;
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.classList.remove('error')
+  formControl.classList.remove('mb-5')
+  formControl.classList.add('success')
+  small.innerText = ''
+}

@@ -61,6 +61,64 @@ Array.from(noteEditButtons).forEach((button) => {
     })
   })
 });
+
+// Add a note 
+
+const addNoteForm = document.querySelector('#add-note-form')
+addNoteForm.addEventListener('submit', (e) => {
+  e.preventDefault()
+  let errors = 0;
+  const noteBody = document.getElementById('new-note-body')
+  console.log(noteBody.value, noteBody.value.length === 0)
+  if (noteBody.value.length == 0) {
+    errors++
+    setErrorFor(noteBody, 'Enter a note!');
+  } else if (noteBody.value.length > 400) {
+    errors++
+    setErrorFor(noteBody, 'Notes should be shorter than 400 characters!');
+  } else {
+    setSuccessFor(noteBody)
+  }
+
+  const noteDate = document.getElementById('new-note-date-written')
+  let noteDateValue = noteDate.value
+
+  let minDate = new Date('1899-01-01');
+  let maxDate = new Date(Date.now());
+
+  if (typeof(noteDateValue) === 'undefined') {
+    noteDateValue = Date.now()
+    setSuccessFor(noteDate);
+  } else if (
+    !isValidDate(new Date(noteDate.value)) ||
+    new Date(noteDateValue) >= maxDate ||
+    new Date(noteDateValue) <= minDate) {
+    errors++
+    setErrorFor(noteDate, 'Please enter a date between 1/1/1899 and today.');
+  } else {
+    noteDateValue = new Date(noteDate.value)
+    setSuccessFor(noteDate);
+  }
+  if (errors === 0) {
+    const plantId = addNoteForm.dataset.plantid
+
+    fetch(`/users/plants/${plantId}/notes`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        date: noteDateValue,
+        body: noteBody.value
+      })
+    })
+      .then(response => {
+      window.location = response.url    
+    })
+      .catch(err => {
+      console.log(err)
+    })      
+  
+  }
+})
   
 const deletePlantModalOpenButton = document.querySelector('#delete-plant-modal-open-button')
 const deletePlantButton = document.querySelector('#submit-delete-plant-button')
@@ -180,7 +238,6 @@ Array.from(deleteImageModalOpenButtons).forEach((button) => {
         })
       })
         .then(function (response) {
-          console.log(response)
           window.location = response.url    
         })
         .catch(err => {
@@ -199,27 +256,49 @@ Array.from(editImageModalOpenButtons).forEach((button) => {
     let cloudinaryId = e.target.parentElement.dataset.cloudinaryid
     let plantId = mainSection.dataset.plantid
     editImageButton.addEventListener('click', function(e) {
-      let date = document.querySelector('#editImageDate').value
-      e.preventDefault()
-      fetch(`/users/plants/${plantId}/images/`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          'plantId': plantId,
-          'cloudinaryId': cloudinaryId,
-          'uploaded': date
+      if (document.querySelector('#editImageDate').value !== "") {
+        let date = document.querySelector('#editImageDate').value
+        e.preventDefault()
+        fetch(`/users/plants/${plantId}/images/`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            'plantId': plantId,
+            'cloudinaryId': cloudinaryId,
+            'uploaded': date
+          })
         })
-      })
-        .then(function (response) {
-          console.log(response)
-          window.location = response.url    
+          .then(function (response) {
+            window.location = response.url    
+          })
+          .catch(err => {
+            console.log(err)
         })
-        .catch(err => {
-          console.log(err)
-      })
+      } 
     })  
   })
 })
 
+function isValidDate(date) {
+  return date instanceof Date && !isNaN(date);
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.classList.remove('success')
+  formControl.classList.add('error')
+  formControl.classList.add('mb-5')
+  small.innerText = message;
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  formControl.classList.remove('error')
+  formControl.classList.remove('mb-5')
+  formControl.classList.add('success')
+  small.innerText = '';
+}
