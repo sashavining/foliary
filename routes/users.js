@@ -25,14 +25,12 @@ router.get('/:id/dashboard', checkAuthenticated, async (req, res) => {
         return imageTag;
 
     }))
-    const alphabetizedPlantNames = []
+    const plantNames = {}
     plants.forEach((plant) => {
-        alphabetizedPlantNames.push(plant.CommonName)
-        alphabetizedPlantNames.push(plant.BotanicalName)
+        plantNames[plant.CommonName] = plant.BotanicalName
     })
-    alphabetizedPlantNames.sort();
     try {
-        res.render(`users/dashboard`, { plants: plants, locations: user.locations.reverse(), userPlants: userPlants, alphabetizedPlantNames: alphabetizedPlantNames, userPlantsImageTags: userPlantsImageTags })
+        res.render(`users/dashboard`, { plants: plants, locations: user.locations.reverse(), userPlants: userPlants, plantNames: plantNames, userPlantsImageTags: userPlantsImageTags })
     } catch (err) {
        console.log(err)
        res.redirect('users/login') 
@@ -185,9 +183,10 @@ router.delete('/plants/notes/:id', checkAuthenticated, async (req, res) => {
 // Add a new plant route
 router.post('/:id/plants', checkAuthenticated, async (req, res) => {
     try {
+        const species = await Plant.findOne({ BotanicalName : req.body.botanicalName })
         const plant = new UserPlant({
             location: req.body.location,
-            species: req.body.species, 
+            species: species._id, 
             name: req.body.name || "Anonymous",
             wateringInterval: req.body.wateringInterval,
             lastWatered: new Date(req.body.lastWatered),
