@@ -6,36 +6,36 @@
                 <i class="bi bi-exclamation-circle-fill text-danger"></i>			          
                 <small class="text-danger">Error message</small>
             </div>
-    <div class="col-md-6 mb-2 form-control-custom" position="relative">
-        <label for="plantSpecies" class="form-label is-valid required">Plant Species</label>
-        <select id="plantSpecies" class="form-select" name="species">
-          <option selected disabled value="">Select a plant species</option>
-          <% alphabetizedPlantNames.forEach((plantName) => { %>
-            <% const plant = plants.find(plant => plant.CommonName == plantName || plant.BotanicalName == plantName) %>
-            <option value="<%= plant._id %>-<%= plantName %>"><%= plantName %></option>
-          <% }) %>
-        </select>
-        <i class="bi bi-check-square-fill text-success"></i>
+            <div class="col-md-6 mb-2 form-control-custom" position="relative">
+              <label for="location" class="form-label required">Location</label>
+              <select class="form-select" id="location" name="location">
+                <option selected disabled value="">Choose a location</option>
+                <% if (currentUser.locations.length > 0) { %>
+                  <% currentUser.locations.forEach(location => {%>
+                    <% if (location !== "No location assigned") {%>
+                    <option value="<%= location %>" name="location"><%= location %></option>
+                    <% } %>
+                  <% }) %>
+                <% } else { %>
+                  <option disabled value="">Enter a location on the menu above to get started!</option>
+                <% } %>
+              </select>
+              <i class="bi bi-check-square-fill text-success"></i>
+              <i class="bi bi-exclamation-circle-fill text-danger"></i>			          
+              <small class="text-danger">Error message</small>
+            </div>
+        
+    <div class="col-md-12 mb-2 form-control-custom" position="relative">
+      <label for="plantSpecies" class="form-label">Plant Species</label>
+      <input class="form-control" list="plantSpeciesOptions" id="plantSpecies" placeholder="Type to search...">
+      <datalist id="plantSpeciesOptions">
+        <% for (const name in plantNames) { %>
+          <option value="<%= name %> (<%= plantNames[name] %>)"></option>
+        <% } %>
+      </datalist>
+            <i class="bi bi-check-square-fill text-success"></i>
         <i class="bi bi-exclamation-circle-fill text-danger"></i>			          
         <small class="text-danger">Error message</small>
-    </div>
-    <div class="col-md-6 mb-2 form-control-custom" position="relative">
-      <label for="location" class="form-label required">Location</label>
-      <select class="form-select" id="location" name="location">
-        <option selected disabled value="">Choose a location</option>
-        <% if (currentUser.locations.length > 0) { %>
-          <% currentUser.locations.forEach(location => {%>
-            <% if (location !== "No location assigned") {%>
-            <option value="<%= location %>" name="location"><%= location %></option>
-            <% } %>
-          <% }) %>
-        <% } else { %>
-          <option disabled value="">Enter a location on the menu above to get started!</option>
-        <% } %>
-      </select>
-      <i class="bi bi-check-square-fill text-success"></i>
-      <i class="bi bi-exclamation-circle-fill text-danger"></i>			          
-      <small class="text-danger">Error message</small>
     </div>
     <div class="col-md-6 form-control-custom" position="relative">
       <label for="wateringFrequency" class="form-label required">Watering frequency (in days)?</label>
@@ -62,7 +62,7 @@
       <small class="text-danger">Error message</small>
     </div>
 
-    <div class="col-md-12 mb-3 form-control-custom" position="relative">
+    <div class="col-md-6 mb-3 form-control-custom" position="relative">
       <label for="lastRepotted" class="form-label">Last repotted:</label>
       <input type="date" class="form-control date-picker" id="lastRepotted" name="lastRepotted" min="1899-01-01">
       <i class="bi bi-check-square-fill text-success"></i>

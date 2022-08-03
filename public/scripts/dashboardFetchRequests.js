@@ -1,4 +1,5 @@
 import { setSuccessFor, setErrorFor, isValidDate } from './formValidationFunctions.js'
+// import autocomplete from './autocomplete.js';
 
 const mainSection = document.querySelector('#main-section')
 
@@ -39,14 +40,7 @@ function checkInputs(name, plantSpecies, location, wateringFrequency, lastWatere
 
   let errors = 0
 
-  let speciesValue = plantSpecies.value.split("-")[0]
-  if (speciesValue === '') {
-    errors++
-    setErrorFor(plantSpecies, 'Choose a plant species!');
-  } else {
-    setSuccessFor(plantSpecies);
-  }
-
+  let speciesValue = plantSpecies.value.split("(")[0]
   let nameValue = name.value.trim()
   if (
     nameValue === '' &&
@@ -263,6 +257,7 @@ const deleteLocationButton = document.querySelector("#delete-location")
     })
     })
   })
+
   // Set maximum date of form date picker to today
   const datePickers = document.querySelectorAll('.date-picker')
   datePickers.forEach(datePicker => datePicker.max = new Date().toLocaleDateString('en-ca'))
@@ -285,30 +280,24 @@ const deleteLocationButton = document.querySelector("#delete-location")
     checkInputs(name, plantSpecies, location, wateringFrequency, lastWatered, lastFertilized, lastRepotted);
   });
 
-  function checkInputs(name, plantSpecies, location, wateringFrequency, lastWatered, lastFertilized, lastRepotted) {
+  function checkInputs(plantName, plantSpecies, location, wateringFrequency, lastWatered, lastFertilized, lastRepotted) {
 
     let errors = 0
 
-    let speciesValue = plantSpecies.value.split("-")[0]
-    if (speciesValue === '') {
-      errors++
-      setErrorFor(plantSpecies, 'Choose a plant species!');
-    } else {
-      setSuccessFor(plantSpecies);
-    }
+    let nameValue = plantName.value.trim()
+    let speciesValue = plantSpecies.value.split("(")[0]
 
-    let nameValue = name.value.trim()
     if (
       nameValue === '' &&
       speciesValue === ''
     ) {
       errors++
-      setErrorFor(name, 'Please input a nickname and/or plant species!');
+      setErrorFor(plantName, 'Please input a nickname and/or plant species!');
     } else if(nameValue === '') {
-      nameValue = plantSpecies.value.split("-")[1]
-      setSuccessFor(name);
+      nameValue = plantSpecies.value.split("(")[0]
+      setSuccessFor(plantName);
     }  else {
-      setSuccessFor(name);
+      setSuccessFor(plantName);
     }
 
     let locationValue = location.value.trim()    
@@ -378,51 +367,52 @@ const deleteLocationButton = document.querySelector("#delete-location")
       setSuccessFor(lastRepotted);
     }
 
-  if (errors === 0) {
-    const userId = addPlantForm.dataset.userid
-    fetch(`/users/${userId}/plants`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        species: speciesValue,
-        name: nameValue,
-        location: locationValue,
-        wateringInterval: wateringFrequencyValue,
-        lastWatered: lastWateredValue,
-        lastFertilized: lastFertilizedValue,
-        lastRepotted: lastRepottedValue
-      })
-    })
-      .then(response => {
-      window.location = response.url    
-    })
-      .catch(err => {
-      console.log(err)
-    })      
+    
+        let plantSpeciesName = document.querySelector("#plantSpecies").value
+        const botanicalNames = []
+        document.querySelector("#plantSpeciesOptions").querySelectorAll('option').forEach(node => {
+          botanicalNames.push(node.value.split("(")[1].slice(0, -1))
+        })
 
-  }
-  }
-  
-
-  // function isValidDate(date) {
-  //   return date instanceof Date && !isNaN(date);
-  // }
-  
-  // function setErrorFor(input, message) {
-  //   const formControl = input.parentElement;
-  //   const small = formControl.querySelector('small');
-  //   formControl.classList.remove('success')
-  //   formControl.classList.add('error')
-  //   formControl.classList.add('mb-5')
-  //   small.innerText = message;
-  // }
-  
-  // function setSuccessFor(input) {
-  //   const formControl = input.parentElement;
-  //   const small = formControl.querySelector('small');
-  //   formControl.classList.remove('error')
-  //   formControl.classList.remove('mb-5')
-  //   formControl.classList.add('success')
-  //   small.innerText = ''
-  // }
-  
+        if (plantSpeciesName === '') {
+          errors++
+          setErrorFor(plantSpecies, 'Choose a plant species!');
+        } else {
+          if (!plantSpeciesName.includes("(")) {
+            errors++
+            setErrorFor(plantSpecies, 'Choose a plant species on the list!');  
+          } else {
+            let botanicalName = plantSpeciesName.split("(")[1].slice(0, -1)
+            if (!botanicalNames.includes(botanicalName)) {
+              errors++
+              setErrorFor(plantSpecies, 'Choose a plant species on the list!');  
+            } else {
+              setSuccessFor(plantSpecies);
+            }  
+          }
+        } 
+    
+        if (errors === 0) {
+          const userId = addPlantForm.dataset.userid;
+          let botanicalName = plantSpeciesName.split("(")[1].slice(0, -1)
+          fetch(`/users/${userId}/plants`, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+              botanicalName: botanicalName,
+              name: nameValue,
+              location: locationValue,
+              wateringInterval: wateringFrequencyValue,
+              lastWatered: lastWateredValue,
+              lastFertilized: lastFertilizedValue,
+              lastRepotted: lastRepottedValue
+            })
+        })
+        .then(response => {
+          window.location = response.url    
+        })
+          .catch(err => {
+          console.log(err)
+        })      
+    }
+  } 

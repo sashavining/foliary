@@ -103,6 +103,22 @@ router.get('/quiz/result', async (req, res) => {
     res.redirect('/plants/quiz')
   }
 })
+// Get all plant names
+router.get('/names', async (req, res) => {
+  const plants = await Plant.find({}).exec()
+  const alphabetizedPlantNames = []
+  plants.forEach((plant) => {
+      alphabetizedPlantNames.push(plant.CommonName)
+      alphabetizedPlantNames.push(plant.BotanicalName)
+  })
+  alphabetizedPlantNames.sort();
+  try {
+      res.json({ alphabetizedPlantNames: alphabetizedPlantNames })
+  } catch (err) {
+     console.log(err)
+     res.sendStatus(500)
+  }
+})
 
 // Show Plant Route
 router.get('/:id', async (req, res) => {
@@ -122,7 +138,6 @@ router.get('/:id', async (req, res) => {
     res.redirect('/')
   }
 })
-
 
 
 router.get('/', async (req, res) => {
