@@ -9,11 +9,12 @@ A full-stack houseplant app for tracking plant care and houseplant recommendatio
 
 **Tech used:** JavaScript, Node, Express, MongoDB, Mongoose, Passport.js, HTML, CSS, Bootstrap
 
-[Screenshot of Foliary plant dashboard page](https://github.com/sashavining/foliary/files/9339349/FoliaryDashboard.pdf)
+![Screenshot of Foliary plant dashboard page](https://user-images.githubusercontent.com/96848086/184702875-fe88aa84-441d-480f-8b42-759e01427033.png)
+
+
 
 Full-stack houseplant care and search app build with MongoDB/Mongoose, Node.js, Express, and Bootstrap. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant growth and care with a care diary, complete with notes and image upload functionality.
-
-[Screenshot of Foliary plant detail page](https://github.com/sashavining/foliary/files/9339356/FoliaryPlantDetail.pdf)
+![Screenshot of Foliary plant detail page](https://user-images.githubusercontent.com/96848086/184702852-ac29dde9-0c6d-49a3-ae42-e039e5f11db5.png)
 
 ## Optimizations
 
