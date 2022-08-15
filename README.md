@@ -14,6 +14,7 @@ A full-stack houseplant app for tracking plant care and houseplant recommendatio
 
 
 Full-stack houseplant care and search app build with MongoDB/Mongoose, Node.js, Express, and Bootstrap. Users can search for plants by care needs; be recommended similar plants to ones they already own; create a user profile and track plant growth and care with a care diary, complete with notes and image upload functionality.
+
 ![Screenshot of Foliary plant detail page](https://user-images.githubusercontent.com/96848086/184702852-ac29dde9-0c6d-49a3-ae42-e039e5f11db5.png)
 
 ## Optimizations
