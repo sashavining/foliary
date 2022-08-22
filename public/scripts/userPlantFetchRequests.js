@@ -70,7 +70,7 @@ addNoteForm.addEventListener('submit', (e) => {
   e.preventDefault()
   let errors = 0;
   const noteBody = document.getElementById('new-note-body')
-  console.log(noteBody.value, noteBody.value.length === 0)
+  console.log(noteBody.value)
   if (noteBody.value.length == 0) {
     errors++
     setErrorFor(noteBody, 'Enter a note!');
@@ -82,6 +82,7 @@ addNoteForm.addEventListener('submit', (e) => {
   }
 
   const noteDate = document.getElementById('new-note-date-written')
+  console.log(noteDate, noteDate.value)
   let noteDateValue = noteDate.value
 
   let minDate = new Date('1899-01-01');
