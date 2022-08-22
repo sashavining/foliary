@@ -23,8 +23,8 @@ Array.from(noteDeleteButtons).forEach((button) => {
           'plantId': plantId
         })
       })
-        .then(function (response) {
-          window.location = response.url    
+        .then(response => {
+          window.location = response.url 
         })
         .catch(err => {
           console.log(err)
