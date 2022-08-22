@@ -13,6 +13,7 @@ Array.from(noteDeleteButtons).forEach((button) => {
     let plantId = mainSection.dataset.plantid
         
     submitNoteDeleteButton.addEventListener('click', function(e) {
+      e.preventDefault()
       fetch(`/users/plants/notes/${noteId}`, {
         method: 'DELETE',
         headers: {
@@ -22,8 +23,8 @@ Array.from(noteDeleteButtons).forEach((button) => {
           'plantId': plantId
         })
       })
-        .then(function (response) {
-          window.location.reload(false)
+        .then(response => {
+          window.location = response.url 
         })
         .catch(err => {
           console.log(err)
@@ -70,7 +71,7 @@ addNoteForm.addEventListener('submit', (e) => {
   e.preventDefault()
   let errors = 0;
   const noteBody = document.getElementById('new-note-body')
-  console.log(noteBody.value, noteBody.value.length === 0)
+  console.log(noteBody.value)
   if (noteBody.value.length == 0) {
     errors++
     setErrorFor(noteBody, 'Enter a note!');
@@ -82,6 +83,7 @@ addNoteForm.addEventListener('submit', (e) => {
   }
 
   const noteDate = document.getElementById('new-note-date-written')
+  console.log(noteDate, noteDate.value)
   let noteDateValue = noteDate.value
 
   let minDate = new Date('1899-01-01');

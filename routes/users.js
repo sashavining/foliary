@@ -167,16 +167,15 @@ router.put('/plants/notes/:id', checkAuthenticated, async (req, res) => {
 router.delete('/plants/notes/:id', checkAuthenticated, async (req, res) => {
     try {
         Note.findOneAndDelete(
-            { _id: `${req.params.id}`} , 
+            { _id: `${req.params.id}`}, 
             function (err, data) { 
-                if (err) {
                  console.log(err)
-                }
         })
-        res.redirect(`/users/plants/${req.body.plantId}`)     
+        res.redirect(303,`/users/plants/${req.body.plantId}`)     
     } catch (err) {
+        console.log('in the catch!')
         console.log(err)
-        res.redirect(`/users/plants/${req.body.plantId}`)     
+        res.redirect(303, `/users/plants/${req.body.plantId}`)     
     }
 })
 
