@@ -6,6 +6,7 @@ const UserPlant = require('../models/userPlant')
 const Note = require('../models/note')
 const cloudinary = require('../utils/cloudinaryConfig')
 const upload = require('../utils/multer')
+const mongoose = require('mongoose')
 
 
 const { checkAuthenticated } = require('../utils/passport')
@@ -167,11 +168,11 @@ router.put('/plants/notes/:id', checkAuthenticated, async (req, res) => {
 router.delete('/plants/notes/:id', checkAuthenticated, async (req, res) => {
     try {
         Note.findOneAndDelete(
-            { _id: `${req.params.id}`} , 
+            { "_id": `${req.params.id}`}, 
             function (err, data) { 
                 if (err) {
                  console.log(err)
-                }
+                } 
         })
         res.redirect(`/users/plants/${req.body.plantId}`)     
     } catch (err) {

@@ -13,6 +13,7 @@ Array.from(noteDeleteButtons).forEach((button) => {
     let plantId = mainSection.dataset.plantid
         
     submitNoteDeleteButton.addEventListener('click', function(e) {
+      e.preventDefault()
       fetch(`/users/plants/notes/${noteId}`, {
         method: 'DELETE',
         headers: {
@@ -23,7 +24,7 @@ Array.from(noteDeleteButtons).forEach((button) => {
         })
       })
         .then(function (response) {
-          window.location.reload(false)
+          window.location = response.url    
         })
         .catch(err => {
           console.log(err)
