@@ -270,7 +270,6 @@ router.put('/plants/:id', checkAuthenticated, async (req, res) => {
     const lastWatered = req.body.lastWatered
     const lastFertilized = req.body.lastFertilized
     const lastRepotted = req.body.lastRepotted
-    console.log(userId, nickname, location, wateringInterval, lastWatered, lastFertilized, lastRepotted)
 
     try {
         UserPlant.findOneAndUpdate(

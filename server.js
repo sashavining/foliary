@@ -11,7 +11,6 @@ const passport = require("passport");
 const session = require("express-session");
 const flash = require('connect-flash');  
 
-
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 app.set('layout', 'layouts/layout')
