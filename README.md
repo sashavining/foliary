@@ -1,7 +1,7 @@
 # Foliary
 A full-stack houseplant app for tracking plant care and houseplant recommendations.
 
-**Link to project:** https://foliary.herokuapp.com/
+**Link to project:** https://proud-newt-handkerchief.cyclic.app/
 
 ![Animated .gif of Foliary homepage and plant search features in use](https://user-images.githubusercontent.com/96848086/184700355-05bb8887-5441-4a24-9846-132bdae690ac.gif)
 
