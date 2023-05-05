@@ -10,6 +10,7 @@ const methodOverride = require('method-override')
 const passport = require("passport");
 const session = require("express-session");
 const flash = require('connect-flash');  
+const MongoStore = require('connect-mongo');
 
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
@@ -19,7 +20,17 @@ app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.json())
-app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: true, name: 'FoliaryPlantAppCookie' }));
+app.use(
+  session({ 
+    secret: process.env.SESSION_SECRET, 
+    resave: false, 
+    saveUninitialized: true, 
+    name: 'FoliaryPlantAppCookie',
+    store: MongoStore.create({
+      mongoUrl: process.env.DATABASE_URL,
+    }),
+  })  
+);
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(function(req, res, next) {
