@@ -2,6 +2,10 @@
     background-color: #28a745 !important;
 }
 
+#login-test-user {
+    cursor: pointer;
+}
+
 .nav-link {
     color: #ffffff !important;
 }

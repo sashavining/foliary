@@ -110,7 +110,7 @@ router.get('/names', async (req, res) => {
   plants.forEach((plant) => {
       alphabetizedPlantNames.push(plant.CommonName)
       alphabetizedPlantNames.push(plant.BotanicalName)
-  })
+  }) 
   alphabetizedPlantNames.sort();
   try {
       res.json({ alphabetizedPlantNames: alphabetizedPlantNames })
