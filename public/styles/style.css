@@ -2,8 +2,12 @@
     background-color: #28a745 !important;
 }
 
-#login-test-user {
+#login-test-user, #water-plant, #fertilize-plant {
     cursor: pointer;
+}
+
+#water-plant:hover, #fertilize-plant:hover {
+    opacity: .8;
 }
 
 .nav-link {
