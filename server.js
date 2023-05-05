@@ -19,7 +19,7 @@ app.use(express.static('public'))
 app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }))
 app.use(express.json())
-app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: true }));
+app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: true, name: 'FoliaryPlantAppCookie' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(function(req, res, next) {
