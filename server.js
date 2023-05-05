@@ -34,13 +34,6 @@ const indexRouter = require('./routes/index')
 const plantRouter = require('./routes/plants')
 const userRouter = require('./routes/users')
 
-app.use('/', indexRouter)
-app.use('/plants', plantRouter)
-app.use('/users', userRouter)
-app.use((req, res, next) => {
-  res.render('partials/errors/404')
-})
-
 const mongoose = require('mongoose')
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 const db = mongoose.connection
@@ -48,4 +41,11 @@ db.on('error', error => console.error(error))
 db.once('open', () => {
   console.log('Connected to Mongoose')
   app.listen(process.env.PORT || 8000)
+})
+
+app.use('/', indexRouter)
+app.use('/plants', plantRouter)
+app.use('/users', userRouter)
+app.use((req, res, next) => {
+  res.render('partials/errors/404')
 })
