@@ -36,6 +36,7 @@ exports.deserializeUser = passport.deserializeUser(function(id, done) {
   });
 
 exports.checkAuthenticated = (req, res, next) => {
+    console.log(req.session.passport.user)
     if (req.isAuthenticated()) { return next() }
     res.redirect("/login")
 }
